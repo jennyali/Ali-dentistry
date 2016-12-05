@@ -1,0 +1,41 @@
+
+
+/*=============   Contents   =============
+
+             1,   Helpers
+
+             2,   Components
+
+             3,   Layout 
+             
+             4,   Pages
+
+    ========================================*/
+
+// BOOTSTRAP //
+@import "../bootstrap-sass-3.3.7/assets/stylesheets/bootstrap";
+//===================================================================//
+
+//========  1, Helpers ========//
+
+@import '_helpers/mixins';
+@import '_helpers/variables';
+
+//========  2, Components =====//
+
+@import '_components/carousel';
+@import '_components/dropdowns';
+@import '_components/icons';
+@import '_components/nav';
+@import '_components/parallex';
+@import '_components/scrollspy';
+
+//========  3, Layout =========//
+
+@import '_layout/header';
+@import '_layout/footer';
+
+//========  4, Pages ==========//
+
+@import '_pages/index-page/index';
+
