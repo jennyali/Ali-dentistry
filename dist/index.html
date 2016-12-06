@@ -12,33 +12,33 @@
 
 </head>
         
-<body style="height: 800px" data-spy="scroll" data-target="#index_scroll-spy" data-offset="20">
+<body data-spy="scroll" data-target="#index_scroll-spy" data-offset="20">
 
   <section class="affixed--top row hidden-xs">
       <!-- SECTION = Affix top text and right nav seen on larger screens-->
     <div class="col-sm-4 col-sm-offset-8 col-md-3 col-md-offset-9 affix" data-spy="affix"  style="z-index: 5">
-        <p class="affixed__book-now__title text-center lead">book an appointment</p>
-
+        <p class="affixed__book-now__title text-center lead">
+          <a href="#sub-page" data-toggle="pill">book an appointment</a>
+        </p>
         <nav class="affixed__scroll-spy" id="index_scroll-spy row">
                 <!-- scroll spy aside nav here -->
             <ul class="nav nav-pills nav-stacked text-right col-sm-7 col-sm-offset-5 col-md-7 col-md-offset-5" style="transform: translateY(75%)">
-                <li class="active"><a href="#">home <span class="icon-circle"></span></a></li>
-                <li><a href="#">about us <span class="icon-circle-o"></a></li>
-                <li><a href="#">services <span class="icon-circle-o"></a></li>
+                <li class="active"><a href="#page-header">home <span class="icon-circle"></span></a></li>
+                <li><a href="#about-us">about us <span class="icon-circle-o"></a></li>
+                <li><a href="#our-services">services <span class="icon-circle-o"></a></li>
                 <li><a href="#">our team <span class="icon-circle-o"></a></li>
                 <li><a href="#">contact us <span class="icon-circle-o"></a></li>
-                <li><a href="#">book online <span class="icon-circle-o"></a></li>
             </ul>
         </nav>
     </div>
   </section>
 
-  <header class="container-fluid">
-    <section class="header__top-strip--color row">
-        <!-- SECTION = color strip at the top of page -->
-        <div class="top-strip--color col-xs-4">light blue</div>
-        <div class="top-strip--color col-xs-4">darker blue</div>
-        <div class="top-strip--color col-xs-4">light purple</div>
+  <header id="page-header" class="container-fluid">
+    <section class="bar__color-stripes row">
+         <!-- SECTION = color stripes -->
+         <div class="bar__color col-xs-4">light blue</div>
+         <div class="bar__color col-xs-4">darker blue</div>
+         <div class="bar__color col-xs-4">light purple</div>
     </section>
     <section class="header navbar navbar-default row">
         <!-- SECTION = main header elements, includes dropdown for small screens and inline-nav for larger screens -->
@@ -78,21 +78,317 @@
                 <!-- inline-nav seen on larger screens -->
                 <nav class="container-fluid">
                     <ul class="nav nav-pills nav-justified">
-                        <li class="active"><a href="#">home</a></li>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">our team</a></li>
-                        <li><a href="#">contact us</a></li>
-                        <li><a href="#">book online</a></li>
+                        <li class="active"><a href="#main-page" data-toggle="pill">home</a></li>
+                        <li><a href="#main-page" data-toggle="pill" >about us</a></li>
+                        <li><a href="#main-page" data-toggle="pill" >services</a></li>
+                        <li><a href="#main-page" data-toggle="pill" >our team</a></li>
+                        <li><a href="#main-page" data-toggle="pill" >contact us</a></li>
+                        <li><a href="#sub-page" data-toggle="pill" >book online</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-    </section >
-
-
-    
+    </section > 
   </header>
+
+  <main class="tab-content main-content__wrapper">
+    <section id="main-page" class="container-fluid tab-pane fade in active">
+      <!-- main page -->
+
+      <article id="main-page__carousel" class="carousel slide" data-ride="carousel">
+          <!-- main page carousel -->
+          <ol class="carousel-indicators">
+              <li data-target="#main-page__carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#main-page__carousel" data-slide-to="1"></li>
+              <li data-target="#main-page__carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/dentist-img4.jpg" alt="male dentist">
+            </div>
+            <div class="item">
+                <img src="images/woman-at-dentist.jpg" alt="woman patient">
+            </div>
+            <div class="item">
+                <img src="images/woman-at-dentist2.jpg" alt="woman patient">
+            </div>
+          </div>
+      </article>
+      <section class="row catergory-blocks__wrapper">
+          <!-- catergory blocks under carousel -->
+          <div class="container">
+              <div class="row">
+                <div class="catergory__block col-sm-4 text-center text-uppercase">
+                    <h3>General<br>Dentistry</h3>
+                </div>
+                <div class="catergory__block col-sm-4 text-center text-uppercase">
+                    <h3>Cosmetic<br>Dentistry</h3>
+                </div>
+                <div class="catergory__block col-sm-4 text-center text-uppercase">
+                    <h3>Emergency<br>Dentistry</h3>
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <section id="about-us" class="about-us__wrapper container">
+          <!-- SECTION = about us -->
+         <div class="jumbotron">
+            <h1 class="text-center">About Us</h1>
+            <div class="text-center" style="font-size: 72px">.</div>
+         </div>
+         <div class="row">
+           <div class="row col-md-6">
+             <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis commodo elit. 
+                Donec dapibus aliquet orci et ullamcorper. Praesent a leo nec est vestibulum venenatis ut non turpis. 
+                Praesent porttitor urna a tincidunt convallis. Sed ut urna condimentum, feugiat orci sit amet, lobortis 
+                nisl. Nunc ultricies maximus ligula, ut ultricies neque facilisis non.
+             </p>
+             <p>
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris at efficitur nisl, 
+                nec sodales diam. Proin pulvinar laoreet leo, eget gravida velit finibus non. Duis maximus, 
+                quam faucibus blandit tincidunt, dolor metus interdum tellus, et lobortis est leo ac mauris. 
+                Aenean non porttitor est, nec consequat libero. Aenean fringilla justo eu quam ultrices, 
+                ut volutpat nunc mattis. Quisque eget feugiat neque, et sollicitudin erat. 
+             </p>
+            </div>
+            <div class="row col-md-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis commodo elit. 
+                Donec dapibus aliquet orci et ullamcorper. Praesent a leo nec est vestibulum venenatis ut non turpis. 
+                Praesent porttitor urna a tincidunt convallis. Sed ut urna condimentum, feugiat orci sit amet, lobortis 
+                nisl. Nunc ultricies maximus ligula, ut ultricies neque facilisis non.
+              </p>
+              <p>
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris at efficitur nisl, 
+                nec sodales diam. Proin pulvinar laoreet leo, eget gravida velit finibus non. Duis maximus, 
+                quam faucibus blandit tincidunt, dolor metus interdum tellus, et lobortis est leo ac mauris. 
+                Aenean non porttitor est, nec consequat libero. Aenean fringilla justo eu quam ultrices, 
+                ut volutpat nunc mattis. Quisque eget feugiat neque, et sollicitudin erat. 
+              </p>
+            </div>
+         </div>
+      </section>
+      <section class="parallax">(parallax img)</section> <!-- parallax behind 'our-services'' -->
+      <section id="our-services" class="our-services__wrapper container-fluid">
+          <!-- SECTION = Our services -->
+          <div class="row">
+              <div class="container">
+                <div class="jumbotron">
+                    <h1 class="text-center">Our services</h1>
+                    <div class="text-center" style="font-size: 72px">.</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="row text-center">
+                            <a href="#"><h3>Routine Exams</h3></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse quis commodo elit. Donec dapibus aliquet orci et ullamcorper. 
+                            </p>
+                        </article>
+                        <article class="row text-center">
+                            <a href="#"><h3>Dental Fillings</h3></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse quis commodo elit. Donec dapibus aliquet orci et ullamcorper. 
+                            </p>
+                        </article>
+                        <article class="row text-center">
+                            <a href="#"><h3>Emergency Dentistry</h3></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse quis commodo elit. Donec dapibus aliquet orci et ullamcorper. 
+                            </p>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="row text-center">
+                            <a href="#"><h3>Dental Hygiene</h3></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse quis commodo elit. Donec dapibus aliquet orci et ullamcorper. 
+                            </p>
+                        </article>
+                        <article class="row text-center">
+                            <a href="#"><h3>Dentures and Veneers</h3></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse quis commodo elit. Donec dapibus aliquet orci et ullamcorper. 
+                            </p>
+                        </article>
+                        <article class="row text-center">
+                            <a href="#"><h3>Teeth Whitening</h3></a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Suspendisse quis commodo elit. Donec dapibus aliquet orci et ullamcorper. 
+                            </p>
+                        </article>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <!-- SECTION = numbar data-strip mid page -->
+            <div class="row wrapper__dentist-data">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <h1>12</h1>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h1>425</h1>
+                            <p>Smiling  Clients</p>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h1>23</h1>
+                            <p>Master Certifications</p>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <h1>10</h1>
+                            <p>Happy Staff</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <!-- SECTION = our dentists -->
+            <div class="row">
+                <div class="container">
+                    <div class="jumbotron">
+                        <h1 class="text-center">Our dentists</h1>
+                        <div class="text-center" style="font-size: 72px">.</div>
+                    </div>
+                    <div class="row">
+                        <figure class="col-md-4 text-center">
+                            <img src="">
+                            <figcaption>
+                                <h3>Dr. Janet Johnson<br>
+                                    <small>Tooth Sepcialist</small>
+                                </h3>                                
+                            </figcaption>
+                        </figure>
+                        <figure class="col-md-4 text-center">
+                            <img src="">
+                            <figcaption>
+                                <h3>Dr. Charles Smith<br>
+                                    <small>Orthodontist</small>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                        <figure class="col-md-4 text-center">
+                            <img src="">
+                            <figcaption>
+                                <h3>Dr. Olivia Bayne<br>
+                                    <small>Hygienist</small>
+                                </h3>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- prallax 'teeth img' -->(parallax img)
+        </section>
+        <section class="wrapper__happy-clients container-fluid">
+            <!-- SECTION = happy Clients -->
+            <div class="row">
+                <div class="container">
+                    <div class="jumbotron">
+                        <h1 class="text-center">Happy Clients</h1>
+                        <div class="text-center" style="font-size: 72px">.</div>
+                    </div>
+                    <div class="row">
+                        <article class="col-md-4 text-center">
+                            <h1 style="font-size: 72px">"</h1>
+                            <p><em>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”</em></p>
+                            <p>Danielle Hudson</p>
+                        </article>
+                        <article class="col-md-4 text-center">
+                            <h1 style="font-size: 72px">"</h1>
+                            <p><em>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”</em></p>
+                            <p>Danielle Hudson</p>
+                        </article>
+                        <article class="col-md-4 text-center">
+                            <h1 style="font-size: 72px">"</h1>
+                            <p><em>“I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”</em></p>
+                            <p>Danielle Hudson</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper__contact-us container-fluid">
+            <!-- SECTION = happy Clients -->
+            <div class="row">
+                <div class="container">
+                    <div class="jumbotron">
+                        <h1 class="text-center">Contact Us</h1>
+                        <div class="text-center" style="font-size: 72px">.</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <h3>Our Address</h3>
+                            <p>500 Terry Francois Street</p>
+                            <p>San Francisco, CA 94158</p>
+                            <p>info@mysite.com \\ Tel: 123-456-7890 </p>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <h3>Opening Hours</h3>
+                            <p>Monday – Friday  09:00AM – 19:00PM</p>
+                            <p>Saturday    09:00AM – 14:00PM/p>
+                        </div>
+                    </div>
+                    <figure class="row">
+                        (map)
+                        <img src=""> <!-- MAP IMG -->
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="sub-page" class="tab-pane fade">
+      sub page
+    </section>
+  </main>
+  <footer class="container">
+      <!-- FOOTER -->
+      <div class="row">
+          <div class="col-md-6 text-center">
+              <div>
+                  <ul class="list-group list-unstyled list-inline">
+                    <li><a href="#" class="list-group-item icon-facebook"></a><li>
+                    <li><a href="#" class="list-group-item icon-twitter"></a><li>
+                    <li><a href="#" class="list-group-item icon-google-plus"></a><li>
+                  </ul>
+                  <p>2023 by Ali Dentistry. Proudly created by Jennifer Ali</p>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <form class="form-group">
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <input type="text" class="form-control" id="subject" placeholder="Subject">
+                  <button type="submit" class="btn btn-default pull-right">Submit</button>
+              </form>
+          </div>
+      </div>
+      <div class="row text-center">
+          <span class="icon-arrow-38"></span>
+      </div>
+      <section class="bar__color-stripes row">
+         <!-- SECTION = color stripes -->
+         <div class="bar__color col-xs-4">light blue</div>
+         <div class="bar__color col-xs-4">darker blue</div>
+         <div class="bar__color col-xs-4">light purple</div>
+       </section>
+  </footer>
 
 
   <script src="../node_modules/jquery/dist/jquery.js"></script>
