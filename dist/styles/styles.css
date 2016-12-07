@@ -5742,4 +5742,44 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/*===========================
+        MIXINS
+=============================*/
+/* color themes
+-------------------------*/
+/*===========================
+        VARIABLES
+=============================*/
+/* color
+-----------------------*/
+/* font-families
+-----------------------*/
+/* font-size
+-----------------------*/
+/* margin/padding sizing
+-----------------------*/
+#site__body .bar__color {
+  height: 20px; }
+
+#site__body .bar__color--right {
+  background: #3DBFBD; }
+
+#site__body .bar__color--center {
+  background: #212A6D; }
+
+#site__body .bar__color--left {
+  background: #2B5D9B; }
+
+#site__body .bar__color {
+  height: 15px; }
+
+#site__body .bar__color--right {
+  background: #3DBFBD; }
+
+#site__body .bar__color--center {
+  background: #212A6D; }
+
+#site__body .bar__color--left {
+  background: #2B5D9B; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -7,38 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../node_modules/normalize.css" rel="stylesheet" type="text/css">
     <link href="https://file.myfontastic.com/ncjQH3qL3iqtxPyrLNBQDo/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Open+Sans:600|Roboto:900" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
     
 
 </head>
         
-<body data-spy="scroll" data-target="#index_scroll-spy" data-offset="20">
+<body id="site__body" data-spy="scroll" data-target="#main-page_scroll-spy" data-offset="0">
 
   <section class="affixed--top row hidden-xs">
-      <!-- SECTION = Affix top text and right nav seen on larger screens-->
+      <!-- SECTION = Affix top text on larger screens-->
     <div class="col-sm-4 col-sm-offset-8 col-md-3 col-md-offset-9 affix" data-spy="affix"  style="z-index: 5">
         <p class="affixed__book-now__title text-center lead">
           <a href="#sub-page" data-toggle="pill">book an appointment</a>
         </p>
-        <nav class="affixed__scroll-spy" id="index_scroll-spy row">
-                <!-- scroll spy aside nav here -->
-            <ul class="nav nav-pills nav-stacked text-right col-sm-7 col-sm-offset-5 col-md-7 col-md-offset-5" style="transform: translateY(75%)">
-                <li class="active"><a href="#page-header">home <span class="icon-circle"></span></a></li>
-                <li><a href="#about-us">about us <span class="icon-circle-o"></a></li>
-                <li><a href="#our-services">services <span class="icon-circle-o"></a></li>
-                <li><a href="#">our team <span class="icon-circle-o"></a></li>
-                <li><a href="#">contact us <span class="icon-circle-o"></a></li>
-            </ul>
-        </nav>
     </div>
   </section>
 
   <header id="page-header" class="container-fluid">
     <section class="bar__color-stripes row">
          <!-- SECTION = color stripes -->
-         <div class="bar__color col-xs-4">light blue</div>
-         <div class="bar__color col-xs-4">darker blue</div>
-         <div class="bar__color col-xs-4">light purple</div>
+         <div class="bar__color bar__color--left col-xs-4"></div>
+         <div class="bar__color bar__color--center col-xs-4"></div>
+         <div class="bar__color bar__color--right col-xs-4"></div>
     </section>
     <section class="header navbar navbar-default row">
         <!-- SECTION = main header elements, includes dropdown for small screens and inline-nav for larger screens -->
@@ -78,11 +69,11 @@
                 <!-- inline-nav seen on larger screens -->
                 <nav class="container-fluid">
                     <ul class="nav nav-pills nav-justified">
-                        <li class="active"><a href="#main-page" data-toggle="pill">home</a></li>
-                        <li><a href="#main-page" data-toggle="pill" >about us</a></li>
-                        <li><a href="#main-page" data-toggle="pill" >services</a></li>
-                        <li><a href="#main-page" data-toggle="pill" >our team</a></li>
-                        <li><a href="#main-page" data-toggle="pill" >contact us</a></li>
+                        <li class="active"><a href="#main-page" data-toggle="pill" class="header__link">home</a></li>
+                        <li><a href="#main-page" data-toggle="pill" class="about-us__link">about us</a></li>
+                        <li><a href="#main-page" data-toggle="pill" class="our-services__link">services</a></li>
+                        <li><a href="#main-page" data-toggle="pill" class="our-dentists__link">our team</a></li>
+                        <li><a href="#main-page" data-toggle="pill" class="contact-us__link">contact us</a></li>
                         <li><a href="#sub-page" data-toggle="pill" >book online</a></li>
                     </ul>
                 </nav>
@@ -94,6 +85,16 @@
   <main class="tab-content main-content__wrapper">
     <section id="main-page" class="container-fluid tab-pane fade in active">
       <!-- main page -->
+        <nav class="navbar affixed__scroll-spy hidden-xs" id="main-page_scroll-spy" style="transform: translateY(75%); position: fixed; right: 0px; z-index: 10;">
+                <!-- scroll spy aside nav here -->
+            <ul class="nav nav-pills nav-stacked text-right">
+                <li class="active"><a href="#page-header">home <span class="icon-circle"></span></a></li>
+                <li><a href="#about-us" class="about-us__link">about us <span class="icon-circle-o"></a></li>
+                <li><a href="#our-services" class="our-services__link">services <span class="icon-circle-o"></a></li>
+                <li><a href="#our-dentists" class="our-dentists__link">our team <span class="icon-circle-o"></a></li>
+                <li><a href="#contact-us" class="contact-us__link">contact us <span class="icon-circle-o"></a></li>
+            </ul>
+        </nav>
 
       <article id="main-page__carousel" class="carousel slide" data-ride="carousel">
           <!-- main page carousel -->
@@ -255,7 +256,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid">
+        <section id="our-dentists"class="container-fluid">
             <!-- SECTION = our dentists -->
             <div class="row">
                 <div class="container">
@@ -323,8 +324,8 @@
                 </div>
             </div>
         </section>
-        <section class="wrapper__contact-us container-fluid">
-            <!-- SECTION = happy Clients -->
+        <section id="contact-us" class="wrapper__contact-us container-fluid">
+            <!-- SECTION = contact us -->
             <div class="row">
                 <div class="container">
                     <div class="jumbotron">
@@ -354,7 +355,56 @@
     </section>
 
     <section id="sub-page" class="tab-pane fade">
-      sub page
+        <!-- sub-page content related to booking appointments -->
+        <div class="row">
+            <div class="container">
+                <div class="jumbotron">
+                    <h1 class="text-center">Our Services</h1>
+                    <div class="text-center" style="font-size: 72px">.</div>
+                </div>
+                <main class="row tab-content">
+                    <section id="services" class="tab-pane fade in active">
+                        <!-- sub section for different appoinments -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <article class="sub-page__article text-center">
+                                    <div class="sub-page__article__inner">
+                                        <h3 class="article__inner__title">Routine Exams</h3>
+                                        <p class="article__inner__data">1 hr 30 min <span>|</span> $300.00</p>
+                                        <p class="article__inner__description">
+                                            Describe your service here. What makes it great? 
+                                            Use short catchy text to tell people what you offer, 
+                                            and the benefits they will receive. A great description 
+                                            gets readers in the mood, and makes them more 
+                                            likely to go ahead and book.
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-primary sub-page__article__btn">
+                                        <a data-toggle="pill" href="#book-now">Book Now</a>
+                                    </button>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="row">
+                        </div>
+                    </section>
+                    <section id="book-now" class="container tab-pane fade">
+                        <!-- sub section to book the appointment -->
+                        <div class="row calander__wrapper">
+                            <div class="col-md-6">
+                                <button class="btn btn-default sub-page__article__btn">
+                                    <a data-toggle="pill" href="#services">Back</a>
+                                </button>
+                                (calander here)
+                            </div>
+                            <div class="col-md-6">
+                                (repeat of clicked article)
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
     </section>
   </main>
   <footer class="container">
@@ -382,12 +432,12 @@
       <div class="row text-center">
           <span class="icon-arrow-38"></span>
       </div>
-      <section class="bar__color-stripes row">
+    <section class="bar__color-stripes row">
          <!-- SECTION = color stripes -->
-         <div class="bar__color col-xs-4">light blue</div>
-         <div class="bar__color col-xs-4">darker blue</div>
-         <div class="bar__color col-xs-4">light purple</div>
-       </section>
+         <div class="bar__color bar__color--left col-xs-4"></div>
+         <div class="bar__color bar__color--center col-xs-4"></div>
+         <div class="bar__color bar__color--right col-xs-4"></div>
+    </section>
   </footer>
 
 

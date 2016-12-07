@@ -1,0 +1,36 @@
+/*===========================
+        MIXINS
+=============================*/
+
+/* color themes
+-------------------------*/
+
+@mixin colorTheme_base{
+    background: $light;
+    color: $primary_color;
+}
+
+@mixin colorTheme_base--invert{
+    background: $primary_color;
+    color: $light;
+}
+
+@mixin colorTheme_alt{
+    background: $light;
+    color: $secondary_color;
+}
+
+@mixin colorTheme_alt--invert{
+    background: $secondary_color;
+    color: $light;
+}
+
+@mixin colorTheme_contrast{
+    background: $light;
+    color: $contrast_color;
+}
+
+@mixin colorTheme_contrast--invert{
+    background: $contrast_color;
+    color: $light;
+}
