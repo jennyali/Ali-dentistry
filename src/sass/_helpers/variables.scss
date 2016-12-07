@@ -1,0 +1,63 @@
+/*===========================
+        VARIABLES
+=============================*/
+
+/* color
+-----------------------*/
+
+$colors : (
+    primary: #2B5D9B,
+    secondary: #212A6D,
+    contrast: #3DBFBD,
+    light: #FFFFFF,
+    dark: #000000,
+);
+
+$primary_color: map-get($map: $colors, $key: primary);
+$secondary_color: map-get($map: $colors, $key: secondary);
+$contrast_color: map-get($map: $colors, $key: contrast);
+$dark: map-get($map: $colors, $key: dark);
+$light: map-get($map: $colors, $key: light);
+$grey: lighten(map-get($map: $colors, $key: dark), 10%);
+
+
+/* font-families
+-----------------------*/
+
+$font_family_logo: 'Roboto', sans-serif;
+$font_family_heading: 'Lato', sans-serif;
+$font_family_paragraph: 'Open Sans', sans-serif;
+
+
+/* font-size
+-----------------------*/
+// BS default = 14px
+
+$font-size: (
+    xlg: 36px,
+    lg: 24px,
+    md: 16px,
+    base: 14px,
+    sm: 12px,
+    xs: 10px,
+);
+
+$font_xlg:  map-get($map: $font-size, $key: xlg);
+$font_lg:  map-get($map: $font-size, $key: lg);
+$font_md:  map-get($map: $font-size, $key: md);
+$font_base:  map-get($map: $font-size, $key: base);
+$font_sm:  map-get($map: $font-size, $key: sm);
+$font_xs:  map-get($map: $font-size, $key: xs);
+
+
+/* margin/padding sizing
+-----------------------*/
+// BS default = 15px
+// mp = margin/padding
+
+$mp_sm: 10px;
+$mp_default: 15px;
+$mp_lg: 20px;
+$mp_double: 30px;
+$mp_triple: 60px;
+
