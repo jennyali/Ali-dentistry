@@ -5,32 +5,83 @@
 /* color themes
 -------------------------*/
 
-@mixin colorTheme_base{
+@mixin colorTheme__base{
     background: $light;
-    color: $primary_color;
+    color: $primary-color;
 }
 
-@mixin colorTheme_base--invert{
-    background: $primary_color;
+@mixin colorTheme__base--invert{
+    background: $primary-color;
     color: $light;
 }
 
-@mixin colorTheme_alt{
+@mixin colorTheme__alt{
     background: $light;
-    color: $secondary_color;
+    color: $secondary-color;
 }
 
-@mixin colorTheme_alt--invert{
-    background: $secondary_color;
+@mixin colorTheme__alt--invert{
+    background: $secondary-color;
     color: $light;
 }
 
-@mixin colorTheme_contrast{
+@mixin colorTheme__contrast{
     background: $light;
-    color: $contrast_color;
+    color: $contrast-color;
 }
 
-@mixin colorTheme_contrast--invert{
-    background: $contrast_color;
+@mixin colorTheme__contrast--invert{
+    background: $contrast-color;
     color: $light;
+}
+
+/* padding and mixins
+-------------------------*/
+
+@mixin paddingCol--inc($size: $mp-double){
+    padding: 0px $size;
+}
+
+@mixin paddingCol--sm($size: $mp-sm){
+    padding: 0px $size;
+}
+
+@mixin marginRow--inc($size: $mp-double){
+    margin: $size 0px;
+}
+
+@mixin marginRow--sm($size: $mp-sm){
+    margin: $size 0px;
+}
+
+/* media query
+-------------------------*/
+
+@mixin mediaQuery--min($size){
+    @media screen and (min-width: $size){
+        @content;
+    }
+}
+
+@mixin mediaQuery--max($size){
+    @media screen and (max-width: $size){
+        @content;
+    }
+}
+
+/* font themes
+-------------------------*/
+
+@mixin font-family--base(){
+    h1{
+        font-family: $font-family-logo;
+    }
+
+    h2, h3, h3{
+        font-family: $font-family-heading;
+    }
+
+    p, li, a{
+        font-family: $font-family-paragraph;
+    }
 }

@@ -1,19 +1,112 @@
 
 #site__body{
+    @include font-family--base;
 
-    .bar__color{
-        height: 15px;
+    .affixed--top{
+        
+        div{
+            @include make-sm-column(4);
+            @include make-sm-column-offset(8);
+            @include make-md-column(3);
+            @include make-md-column-offset(9);
+            @include colorTheme__contrast--invert;
+            z-index: 5;
+            position: fixed;
+        }
     }
 
-    .bar__color--right{
-        background: $contrast_color;
+    .site-header__booking{
+        @include colorTheme__contrast--invert;
+        padding: $mp-default 0px;
+        margin: 0px;
+
+        a{
+            @include marginRow--inc($mp-default);
+            color: inherit;
+            text-decoration: none;
+            font-size: $font-size-md;
+        }
     }
 
-    .bar__color--center{
-        background: $secondary_color;
+    .site-header{}
+
+    .site-header__section{
+        @include make-row;
     }
 
-    .bar__color--left{
-        background: $primary_color;
+    .site-header__content{
+        @extend .container;
     }
+
+    .site-header__row-top{
+        @include make-row;
+
+            @include mediaQuery--min($bp-sm){
+                display: flex;
+            }
+    }
+    .row-top__inner{
+        @include make-sm-column(6);
+        @include make-sm-column-push(6);
+        display: flex;
+
+            @include mediaQuery--min($bp-sm){
+                align-self: flex-end;
+                justify-content: flex-end;
+            }
+    }
+
+    .site-header__phone-number{
+        @include make-xs-column(8);
+        @include marginRow--inc($mp-double);
+        color: $secondary-color;
+        font-size: $font-size-md;
+
+            @include mediaQuery--min($bp-sm){
+               text-align: right;
+            }
+    }
+
+    .site-header__dropdown-btn{
+        @include make-xs-column(4);
+        align-self: center;
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+
+            @include mediaQuery--min($bp-sm){
+                display: none;
+            }
+    }
+
+    .site-header__dropdown-menu{}
+
+    .site-header__title{
+        @include make-sm-column(6);
+        @include make-sm-column-pull(6);
+        text-align: center;
+
+        @include mediaQuery--min($bp-sm){
+            text-align: left;
+        }
+
+        h1{
+            margin-top: $mp-lg;
+            color: $secondary-color;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+
+                @include mediaQuery--min($bp-sm){
+                    margin-top: $mp-triple;
+                }
+        }
+
+        a,li{
+            text-decoration: none;
+        }
+    }
+
+        .site-header__row-bottom{}
+          
+          .site-header__nav--inline{}
 }

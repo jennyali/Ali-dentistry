@@ -1,7 +1,7 @@
 #site__body{
 
     .bar__color{
-        height: 20px;
+        height: 10px;
     }
 
     .bar__color--right{
@@ -14,5 +14,11 @@
 
     .bar__color--left{
         background: $primary_color;
+    }
+
+    .container{
+        @include mediaQuery--min($bp-lg){
+            width: 970px;
+        }
     }
 }
