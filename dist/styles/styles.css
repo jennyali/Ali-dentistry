@@ -1503,24 +1503,24 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container {
+.container, #site__body .site-header__content {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, .container:after {
+  .container:before, #site__body .site-header__content:before, .container:after, #site__body .site-header__content:after {
     content: " ";
     display: table; }
-  .container:after {
+  .container:after, #site__body .site-header__content:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container {
+    .container, #site__body .site-header__content {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container {
+    .container, #site__body .site-header__content {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .container {
+    .container, #site__body .site-header__content {
       width: 1170px; } }
 
 .container-fluid {
@@ -3699,15 +3699,15 @@ tbody.collapse.in {
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header,
-.container > .navbar-collapse,
+.container > .navbar-header, #site__body .site-header__content > .navbar-header,
+.container > .navbar-collapse, #site__body .site-header__content > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
-    .container > .navbar-header,
-    .container > .navbar-collapse,
+    .container > .navbar-header, #site__body .site-header__content > .navbar-header,
+    .container > .navbar-collapse, #site__body .site-header__content > .navbar-collapse,
     .container-fluid > .navbar-header,
     .container-fluid > .navbar-collapse {
       margin-right: 0;
@@ -3751,7 +3751,7 @@ tbody.collapse.in {
   .navbar-brand > img {
     display: block; }
   @media (min-width: 768px) {
-    .navbar > .container .navbar-brand,
+    .navbar > .container .navbar-brand, #site__body .navbar > .site-header__content .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
@@ -4276,18 +4276,18 @@ a.badge:hover, a.badge:focus {
     font-weight: 200; }
   .jumbotron > hr {
     border-top-color: #d5d5d5; }
-  .container .jumbotron,
+  .container .jumbotron, #site__body .site-header__content .jumbotron,
   .container-fluid .jumbotron {
     border-radius: 6px;
     padding-left: 15px;
     padding-right: 15px; }
-  .jumbotron .container {
+  .jumbotron .container, .jumbotron #site__body .site-header__content, #site__body .jumbotron .site-header__content {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron,
+      .container .jumbotron, #site__body .site-header__content .jumbotron,
       .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
@@ -5747,6 +5747,12 @@ button.close {
 =============================*/
 /* color themes
 -------------------------*/
+/* padding and mixins
+-------------------------*/
+/* media query
+-------------------------*/
+/* font themes
+-------------------------*/
 /*===========================
         VARIABLES
 =============================*/
@@ -5758,8 +5764,16 @@ button.close {
 -----------------------*/
 /* margin/padding sizing
 -----------------------*/
+/* breakpoints
+-----------------------*/
+#site__body button.dropdown-btn {
+  background: #FFFFFF;
+  color: #212A6D;
+  border: none;
+  font-size: 28px; }
+
 #site__body .bar__color {
-  height: 20px; }
+  height: 10px; }
 
 #site__body .bar__color--right {
   background: #3DBFBD; }
@@ -5770,16 +5784,158 @@ button.close {
 #site__body .bar__color--left {
   background: #2B5D9B; }
 
-#site__body .bar__color {
-  height: 15px; }
+@media screen and (min-width: 1200px) {
+  #site__body .container, #site__body .site-header__content {
+    width: 970px; } }
 
-#site__body .bar__color--right {
-  background: #3DBFBD; }
+#site__body h1 {
+  font-family: "Roboto", sans-serif; }
 
-#site__body .bar__color--center {
-  background: #212A6D; }
+#site__body h2, #site__body h3, #site__body h3 {
+  font-family: "Lato", sans-serif; }
 
-#site__body .bar__color--left {
-  background: #2B5D9B; }
+#site__body p, #site__body li, #site__body a {
+  font-family: "Open Sans", sans-serif; }
+
+#site__body .affixed--top div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #3DBFBD;
+  color: #FFFFFF;
+  z-index: 5;
+  position: fixed; }
+  @media (min-width: 768px) {
+    #site__body .affixed--top div {
+      float: left;
+      width: 33.33333%; } }
+  @media (min-width: 768px) {
+    #site__body .affixed--top div {
+      margin-left: 66.66667%; } }
+  @media (min-width: 992px) {
+    #site__body .affixed--top div {
+      float: left;
+      width: 25%; } }
+  @media (min-width: 992px) {
+    #site__body .affixed--top div {
+      margin-left: 75%; } }
+
+#site__body .site-header__booking {
+  background: #3DBFBD;
+  color: #FFFFFF;
+  padding: 15px 0px;
+  margin: 0px; }
+  #site__body .site-header__booking a {
+    margin: 15px 0px;
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px; }
+
+#site__body .site-header__section {
+  margin-left: -15px;
+  margin-right: -15px; }
+  #site__body .site-header__section:before, #site__body .site-header__section:after {
+    content: " ";
+    display: table; }
+  #site__body .site-header__section:after {
+    clear: both; }
+
+#site__body .site-header__row-top {
+  margin-left: -15px;
+  margin-right: -15px; }
+  #site__body .site-header__row-top:before, #site__body .site-header__row-top:after {
+    content: " ";
+    display: table; }
+  #site__body .site-header__row-top:after {
+    clear: both; }
+  @media screen and (min-width: 768px) {
+    #site__body .site-header__row-top {
+      display: -ms-flexbox;
+      display: flex; } }
+
+#site__body .row-top__inner {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 768px) {
+    #site__body .row-top__inner {
+      float: left;
+      width: 50%; } }
+  @media (min-width: 768px) {
+    #site__body .row-top__inner {
+      left: 50%; } }
+  @media screen and (min-width: 768px) {
+    #site__body .row-top__inner {
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; } }
+
+#site__body .site-header__phone-number {
+  position: relative;
+  float: left;
+  width: 66.66667%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 30px 0px;
+  color: #212A6D;
+  font-size: 16px; }
+  @media screen and (min-width: 768px) {
+    #site__body .site-header__phone-number {
+      text-align: right; } }
+
+#site__body .site-header__dropdown-btn {
+  position: relative;
+  float: left;
+  width: 33.33333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  @media screen and (min-width: 768px) {
+    #site__body .site-header__dropdown-btn {
+      display: none; } }
+
+#site__body .site-header__title {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center; }
+  @media (min-width: 768px) {
+    #site__body .site-header__title {
+      float: left;
+      width: 50%; } }
+  @media (min-width: 768px) {
+    #site__body .site-header__title {
+      right: 50%; } }
+  @media screen and (min-width: 768px) {
+    #site__body .site-header__title {
+      text-align: left; } }
+  #site__body .site-header__title h1 {
+    margin-top: 20px;
+    color: #212A6D;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+    @media screen and (min-width: 768px) {
+      #site__body .site-header__title h1 {
+        margin-top: 60px; } }
+  #site__body .site-header__title a, #site__body .site-header__title li {
+    text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */
