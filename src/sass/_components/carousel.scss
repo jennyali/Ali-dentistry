@@ -2,8 +2,9 @@
 #site__body {
 
     #main-page__carousel {
-        max-height: 800px;
+        max-height: 850px;
         overflow: hidden;
+        z-index: 3;
     }
 
     .carousel-indicators {}

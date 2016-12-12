@@ -34,7 +34,8 @@ $font-family-paragraph: 'Open Sans', sans-serif;
 // BS default = 14px
 
 $font-size: (
-    xlg: 36px,
+    xxlg: 36px,
+    xlg: 28px,
     lg: 24px,
     md: 16px,
     base: 14px,
@@ -42,6 +43,7 @@ $font-size: (
     xs: 10px,
 );
 
+$font-size-xxlg:  map-get($map: $font-size, $key: xxlg);
 $font-size-xlg:  map-get($map: $font-size, $key: xlg);
 $font-size-lg:  map-get($map: $font-size, $key: lg);
 $font-size-md:  map-get($map: $font-size, $key: md);
