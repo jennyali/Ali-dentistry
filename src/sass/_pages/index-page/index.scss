@@ -1,9 +1,49 @@
 #site__body {
 
-    .main-content__wrapper{}
+    .main-content__wrapper {}
 
     .main-content__wrapper > section {
         padding: 0px;
+    }
+
+    .main-content__wrapper {
+        position: relative;
+
+    }
+
+    .catergory-blocks__wrapper {
+        position: relative;
+        padding: $mp-double;
+
+        @include mediaQuery--min($bp-sm) {
+            padding: 0;
+        }
+    }
+
+    .catergory-blocks__wrapper > div {
+
+            @include mediaQuery--min($bp-sm) {
+                position: absolute;
+                top: -250px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    }
+
+    .catergory__block {
+        @include colorTheme__base--invert;
+        background-color: rgba($primary-color, 0.7);
+        padding: $mp-double;
+        position: relative;
+        border-bottom: 10px solid $primary-color;
+
+            @include mediaQuery--min($bp-sm) {
+                padding: 80px;
+            }
+    }
+
+    .catergory__block > h3 {
+
     }
 
 

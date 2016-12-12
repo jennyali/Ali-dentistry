@@ -6041,4 +6041,32 @@ button.close {
 #site__body .main-content__wrapper > section {
   padding: 0px; }
 
+#site__body .main-content__wrapper {
+  position: relative; }
+
+#site__body .catergory-blocks__wrapper {
+  position: relative;
+  padding: 30px; }
+  @media screen and (min-width: 768px) {
+    #site__body .catergory-blocks__wrapper {
+      padding: 0; } }
+
+@media screen and (min-width: 768px) {
+  #site__body .catergory-blocks__wrapper > div {
+    position: absolute;
+    top: -250px;
+    left: 50%;
+    transform: translateX(-50%); } }
+
+#site__body .catergory__block {
+  background: #2B5D9B;
+  color: #FFFFFF;
+  background-color: rgba(43, 93, 155, 0.7);
+  padding: 30px;
+  position: relative;
+  border-bottom: 10px solid #2B5D9B; }
+  @media screen and (min-width: 768px) {
+    #site__body .catergory__block {
+      padding: 80px; } }
+
 /*# sourceMappingURL=styles.css.map */
