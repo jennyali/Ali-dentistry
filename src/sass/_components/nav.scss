@@ -1,0 +1,32 @@
+
+#site__body {
+
+    .nav-inline--base {     // CURRENT INLINE-NAV IN HEADER FOR MD/LG SCREENS
+        @extend .container-fluid;
+
+            ul {
+                @extend .nav;
+                @extend .nav-pills;
+                @extend .nav-justified;
+                text-transform: capitalize;
+
+            }
+
+            ul > li.active > a {
+                @include colorTheme__contrast;
+                padding: $mp-default;
+            }
+
+            ul > li.active > a:focus {@include colorTheme__contrast}
+
+            ul > li.active > a:hover {@include colorTheme__contrast}
+
+            a {  
+                @include colorTheme__alt;
+                border-radius: 0px;
+                transition: color 0.25s;
+            }
+
+            a:hover {@include colorTheme__contrast}
+    }
+}

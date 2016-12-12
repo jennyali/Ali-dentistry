@@ -1,8 +1,9 @@
 #site__body{
 
-    button.dropdown-btn{
+    button.dropdown-btn{        // CURRENT BURGER MENU ICON BTN
         @include colorTheme--alt;
         border: none;
         font-size: 28px;
+        outline: none;
     }
 }
