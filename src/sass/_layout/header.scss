@@ -1,10 +1,10 @@
 
-#site__body{
+#site__body {
     @include font-family--base;
 
-    .affixed--top{
+    .affixed--top {
         
-        div{
+        div {
             @include make-sm-column(4);
             @include make-sm-column-offset(8);
             @include make-md-column(3);
@@ -15,12 +15,12 @@
         }
     }
 
-    .site-header__booking{
+    .site-header__booking {
         @include colorTheme__contrast--invert;
         padding: $mp-default 0px;
         margin: 0px;
 
-        a{
+        a {
             @include marginRow--inc($mp-default);
             color: inherit;
             text-decoration: none;
@@ -28,85 +28,79 @@
         }
     }
 
-    .site-header{}
+    .site-header {
+        padding: 0;
 
-    .site-header__section{
+            @include mediaQuery--min($bp-sm){padding: 0px $mp-default;}
+    }
+
+    .site-header__section {
         @include make-row;
+        border: none;
+        margin: 0;
     }
 
-    .site-header__content{
-        @extend .container;
-    }
+    .site-header__content {@extend .container;}
 
-    .site-header__row-top{
+    .site-header__row-top {
         @include make-row;
 
-            @include mediaQuery--min($bp-sm){
-                display: flex;
-            }
+            @include mediaQuery--min($bp-sm){display: flex;}
     }
-    .row-top__inner{
+    .row-top__inner {
         @include make-sm-column(6);
         @include make-sm-column-push(6);
         display: flex;
 
-            @include mediaQuery--min($bp-sm){
+            @include mediaQuery--min($bp-sm) {
                 align-self: flex-end;
                 justify-content: flex-end;
             }
     }
 
-    .site-header__phone-number{
+    .site-header__phone-number {
         @include make-xs-column(8);
         @include marginRow--inc($mp-double);
         color: $secondary-color;
         font-size: $font-size-md;
+        padding: 0;
 
-            @include mediaQuery--min($bp-sm){
-               text-align: right;
-            }
+            @include mediaQuery--min($bp-sm){text-align: right;}
     }
 
-    .site-header__dropdown-btn{
+    .site-header__dropdown-btn {
         @include make-xs-column(4);
         align-self: center;
         display: flex;
         position: relative;
         justify-content: flex-end;
+        padding: 0;
 
-            @include mediaQuery--min($bp-sm){
-                display: none;
-            }
+            @include mediaQuery--min($bp-sm){display: none;}
     }
 
-    .site-header__dropdown-menu{}
 
-    .site-header__title{
+    .site-header__title {
         @include make-sm-column(6);
         @include make-sm-column-pull(6);
         text-align: center;
+        padding: 0;
 
-        @include mediaQuery--min($bp-sm){
-            text-align: left;
-        }
+            @include mediaQuery--min($bp-sm) {
+                text-align: left;
+                padding: 0px $mp-default;
+            }
 
-        h1{
-            margin-top: $mp-lg;
-            color: $secondary-color;
-            letter-spacing: 3px;
-            text-transform: uppercase;
+            h1 {
+                margin-top: $mp-lg;
+                margin-bottom: $mp-lg;
+                color: $secondary-color;
+                letter-spacing: 3px;
+                text-transform: uppercase;
 
-                @include mediaQuery--min($bp-sm){
-                    margin-top: $mp-triple;
-                }
-        }
+                    @include mediaQuery--min($bp-sm){margin-top: $mp-triple;}
+            }
 
-        a,li{
-            text-decoration: none;
-        }
+            a,li {text-decoration: none;}
     }
-
-        .site-header__row-bottom{}
-          
-          .site-header__nav--inline{}
 }

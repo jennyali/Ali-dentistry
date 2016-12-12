@@ -1,0 +1,35 @@
+
+#site__body{
+
+    .dropdown-menu--base{   // CURRENT DROPDOWN FOR HEADER, XS/SM SCREEN
+        width: 100%;
+        padding: 0px $mp-default;
+        position: absolute;
+        z-index: 10;
+
+        ul{
+            @extend .list-group;
+            @extend .list-unstyled;
+            @include colorTheme__alt;
+            border: 1px solid $secondary-color;
+        }
+
+        li{
+            @include colorTheme__alt;
+            padding: $mp-default;
+            text-transform: capitalize;
+            border-bottom: 1px solid $secondary-color;
+        }
+
+        li.active{
+            @include colorTheme__base--invert;
+
+            a{@include colorTheme__base--invert}
+        }
+
+        li:last-child{border-bottom: none;}
+
+        a{@include colorTheme__alt;}
+    }
+
+}

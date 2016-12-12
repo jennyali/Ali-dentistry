@@ -38,13 +38,13 @@
                 <div class="row-top__inner">
                     <p class="site-header__phone-number">Call Now: 1234 567 890</p>
                     <div class="site-header__dropdown-btn">
-                        <button class="dropdown-btn" data-toggle="collapse" data-target="#nav-dropdown">
+                        <button class="dropdown-btn">
                             <span class="icon-bars"></span>
                         </button>
                     </div>
                 </div>
-                <div id="nav-dropdown" class="collapse site-header__dropdown-menu"> <!-- dropdown menu for small screens -->
-                    <ul class="list-group list-unstyled">
+                <div id="header__dropdown" class="dropdown-menu--base"> <!-- dropdown menu for small screens -->
+                    <ul>
                         <li class="active"><a href="#">home</a></li>
                         <li><a href="#">about us</a></li>
                         <li><a href="#">services</a></li>
@@ -63,8 +63,8 @@
                 </div>
             </div>
             <div class="site-header__row-bottom row hidden-xs"> <!-- inline-nav seen on larger screens -->
-                <nav class="container-fluid site-header__nav--inline">
-                    <ul class="nav nav-pills nav-justified">
+                <nav class="nav-inline--base">
+                    <ul>
                         <li class="active"><a href="#main-page" data-toggle="pill" class="header__link">home</a></li>
                         <li><a href="#main-page" data-toggle="pill" class="about-us__link">about us</a></li>
                         <li><a href="#main-page" data-toggle="pill" class="our-services__link">services</a></li>
@@ -81,14 +81,14 @@
   <main class="tab-content main-content__wrapper">
     <section id="main-page" class="container-fluid tab-pane fade in active">
       <!-- main page -->
-        <nav class="navbar affixed__scroll-spy hidden-xs" id="main-page_scroll-spy" style="transform: translateY(75%); position: fixed; right: 0px; z-index: 10;">
+        <nav class="affixed__scroll-spy" id="main-page_scroll-spy" style="transform: translateY(75%); position: fixed; z-index: 10;">
                 <!-- scroll spy aside nav here -->
             <ul class="nav nav-pills nav-stacked text-right">
-                <li class="active"><a href="#page-header">home <span class="icon-circle"></span></a></li>
-                <li><a href="#about-us" class="about-us__link">about us <span class="icon-circle-o"></a></li>
-                <li><a href="#our-services" class="our-services__link">services <span class="icon-circle-o"></a></li>
-                <li><a href="#our-dentists" class="our-dentists__link">our team <span class="icon-circle-o"></a></li>
-                <li><a href="#contact-us" class="contact-us__link">contact us <span class="icon-circle-o"></a></li>
+                <li class="active"><a href="#page-header">home</a><span class="icon-circle-o"></span></li>
+                <li><a href="#about-us" class="about-us__link">about us</a><span class="icon-circle-o"></li>
+                <li><a href="#our-services" class="our-services__link">services</a><span class="icon-circle-o"></li>
+                <li><a href="#our-dentists" class="our-dentists__link">our team</a><span class="icon-circle-o"></li>
+                <li><a href="#contact-us" class="contact-us__link">contact us</a><span class="icon-circle-o"></li>
             </ul>
         </nav>
 

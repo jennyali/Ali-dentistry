@@ -1,24 +1,12 @@
 #site__body{
 
-    .bar__color{
-        height: 10px;
-    }
+    .bar__color {height: 10px;}
 
-    .bar__color--right{
-        background: $contrast_color;
-    }
+    .bar__color--right {background: $contrast_color;}
 
-    .bar__color--center{
-        background: $secondary_color;
-    }
+    .bar__color--center {background: $secondary_color;}
 
-    .bar__color--left{
-        background: $primary_color;
-    }
+    .bar__color--left {background: $primary_color;}
 
-    .container{
-        @include mediaQuery--min($bp-lg){
-            width: 970px;
-        }
-    }
+    .container{@include mediaQuery--min($bp-lg){width: 970px;}}
 }

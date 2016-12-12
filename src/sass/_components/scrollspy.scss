@@ -1,0 +1,38 @@
+
+
+#site__body {
+
+    .affixed__scroll-spy {
+        @extend .navbar;
+        @extend .hidden-xs;
+        right: 50px;
+
+            ul {}
+
+            ul > li {
+            }
+
+            ul > li > a {
+                display: inline-block;
+                color: $secondary-color;
+                text-transform: capitalize;
+                opacity: 0;
+                transition: opacity 0.25s;
+            }
+
+            span {
+                color: $secondary-color;
+                position: relative;
+                top: 2px;
+            }
+
+            ul > li.active > a{
+                background: none;
+                opacity: 1;
+            }
+
+            ul > li.active > span{
+                @extend .icon-circle !optional;
+            }
+    }
+}
