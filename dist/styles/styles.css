@@ -1503,35 +1503,35 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, #site__body .site-header__content {
+.container, #site__body .site-header__content, #site__body .about-us__section, #site__body .section__title {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, #site__body .site-header__content:before, .container:after, #site__body .site-header__content:after {
+  .container:before, #site__body .site-header__content:before, #site__body .about-us__section:before, #site__body .section__title:before, .container:after, #site__body .site-header__content:after, #site__body .about-us__section:after, #site__body .section__title:after {
     content: " ";
     display: table; }
-  .container:after, #site__body .site-header__content:after {
+  .container:after, #site__body .site-header__content:after, #site__body .about-us__section:after, #site__body .section__title:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container, #site__body .site-header__content {
+    .container, #site__body .site-header__content, #site__body .about-us__section, #site__body .section__title {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container, #site__body .site-header__content {
+    .container, #site__body .site-header__content, #site__body .about-us__section, #site__body .section__title {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .container, #site__body .site-header__content {
+    .container, #site__body .site-header__content, #site__body .about-us__section, #site__body .section__title {
       width: 1170px; } }
 
-.container-fluid, #site__body .nav-inline--base {
+.container-fluid, #site__body .nav-inline--base, #site__body .section {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container-fluid:before, #site__body .nav-inline--base:before, .container-fluid:after, #site__body .nav-inline--base:after {
+  .container-fluid:before, #site__body .nav-inline--base:before, #site__body .section:before, .container-fluid:after, #site__body .nav-inline--base:after, #site__body .section:after {
     content: " ";
     display: table; }
-  .container-fluid:after, #site__body .nav-inline--base:after {
+  .container-fluid:after, #site__body .nav-inline--base:after, #site__body .section:after {
     clear: both; }
 
 .row {
@@ -3699,17 +3699,17 @@ tbody.collapse.in {
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header, #site__body .site-header__content > .navbar-header,
-.container > .navbar-collapse, #site__body .site-header__content > .navbar-collapse,
-.container-fluid > .navbar-header, #site__body .nav-inline--base > .navbar-header,
-.container-fluid > .navbar-collapse, #site__body .nav-inline--base > .navbar-collapse {
+.container > .navbar-header, #site__body .site-header__content > .navbar-header, #site__body .about-us__section > .navbar-header, #site__body .section__title > .navbar-header,
+.container > .navbar-collapse, #site__body .site-header__content > .navbar-collapse, #site__body .about-us__section > .navbar-collapse, #site__body .section__title > .navbar-collapse,
+.container-fluid > .navbar-header, #site__body .nav-inline--base > .navbar-header, #site__body .section > .navbar-header,
+.container-fluid > .navbar-collapse, #site__body .nav-inline--base > .navbar-collapse, #site__body .section > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
-    .container > .navbar-header, #site__body .site-header__content > .navbar-header,
-    .container > .navbar-collapse, #site__body .site-header__content > .navbar-collapse,
-    .container-fluid > .navbar-header, #site__body .nav-inline--base > .navbar-header,
-    .container-fluid > .navbar-collapse, #site__body .nav-inline--base > .navbar-collapse {
+    .container > .navbar-header, #site__body .site-header__content > .navbar-header, #site__body .about-us__section > .navbar-header, #site__body .section__title > .navbar-header,
+    .container > .navbar-collapse, #site__body .site-header__content > .navbar-collapse, #site__body .about-us__section > .navbar-collapse, #site__body .section__title > .navbar-collapse,
+    .container-fluid > .navbar-header, #site__body .nav-inline--base > .navbar-header, #site__body .section > .navbar-header,
+    .container-fluid > .navbar-collapse, #site__body .nav-inline--base > .navbar-collapse, #site__body .section > .navbar-collapse {
       margin-right: 0;
       margin-left: 0; } }
 
@@ -3751,9 +3751,10 @@ tbody.collapse.in {
   .navbar-brand > img {
     display: block; }
   @media (min-width: 768px) {
-    .navbar > .container .navbar-brand, #site__body .affixed__scroll-spy > .container .navbar-brand, #site__body .navbar > .site-header__content .navbar-brand, #site__body .affixed__scroll-spy > .site-header__content .navbar-brand,
+    .navbar > .container .navbar-brand, #site__body .affixed__scroll-spy > .container .navbar-brand, #site__body .navbar > .site-header__content .navbar-brand, #site__body .affixed__scroll-spy > .site-header__content .navbar-brand, #site__body .navbar > .about-us__section .navbar-brand, #site__body .affixed__scroll-spy > .about-us__section .navbar-brand, #site__body .navbar > .section__title .navbar-brand, #site__body .affixed__scroll-spy > .section__title .navbar-brand,
     .navbar > .container-fluid .navbar-brand, #site__body .affixed__scroll-spy > .container-fluid .navbar-brand, #site__body
-    .navbar > .nav-inline--base .navbar-brand, #site__body .affixed__scroll-spy > .nav-inline--base .navbar-brand {
+    .navbar > .nav-inline--base .navbar-brand, #site__body .affixed__scroll-spy > .nav-inline--base .navbar-brand, #site__body
+    .navbar > .section .navbar-brand, #site__body .affixed__scroll-spy > .section .navbar-brand {
       margin-left: -15px; } }
 
 .navbar-toggle {
@@ -4262,38 +4263,42 @@ a.badge:hover, a.badge:focus {
   text-decoration: none;
   cursor: pointer; }
 
-.jumbotron {
+.jumbotron, #site__body .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
   background-color: #eeeeee; }
-  .jumbotron h1,
-  .jumbotron .h1 {
+  .jumbotron h1, #site__body .jumbotron h1,
+  .jumbotron .h1, #site__body .jumbotron .h1 {
     color: inherit; }
-  .jumbotron p {
+  .jumbotron p, #site__body .jumbotron p {
     margin-bottom: 15px;
     font-size: 21px;
     font-weight: 200; }
-  .jumbotron > hr {
+  .jumbotron > hr, #site__body .jumbotron > hr {
     border-top-color: #d5d5d5; }
-  .container .jumbotron, #site__body .site-header__content .jumbotron,
-  .container-fluid .jumbotron, #site__body .nav-inline--base .jumbotron {
+  .container .jumbotron, .container #site__body .jumbotron, #site__body .container .jumbotron, #site__body .site-header__content .jumbotron, #site__body .about-us__section .jumbotron, #site__body .section__title .jumbotron,
+  .container-fluid .jumbotron,
+  .container-fluid #site__body .jumbotron, #site__body
+  .container-fluid .jumbotron, #site__body .nav-inline--base .jumbotron, #site__body .section .jumbotron {
     border-radius: 6px;
     padding-left: 15px;
     padding-right: 15px; }
-  .jumbotron .container, .jumbotron #site__body .site-header__content, #site__body .jumbotron .site-header__content {
+  .jumbotron .container, #site__body .jumbotron .container, .jumbotron #site__body .site-header__content, #site__body .jumbotron .site-header__content, .jumbotron #site__body .about-us__section, #site__body .jumbotron .about-us__section, .jumbotron #site__body .section__title, #site__body .jumbotron .section__title {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
-    .jumbotron {
+    .jumbotron, #site__body .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron, #site__body .site-header__content .jumbotron,
-      .container-fluid .jumbotron, #site__body .nav-inline--base .jumbotron {
+      .container .jumbotron, .container #site__body .jumbotron, #site__body .container .jumbotron, #site__body .site-header__content .jumbotron, #site__body .about-us__section .jumbotron, #site__body .section__title .jumbotron,
+      .container-fluid .jumbotron,
+      .container-fluid #site__body .jumbotron, #site__body
+      .container-fluid .jumbotron, #site__body .nav-inline--base .jumbotron, #site__body .section .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
-      .jumbotron h1,
-      .jumbotron .h1 {
+      .jumbotron h1, #site__body .jumbotron h1,
+      .jumbotron .h1, #site__body .jumbotron .h1 {
         font-size: 63px; } }
 
 .thumbnail {
@@ -5698,7 +5703,7 @@ button.close {
     display: inline-block !important; } }
 
 @media (max-width: 767px) {
-  .hidden-xs, #site__body .affixed__scroll-spy {
+  .hidden-xs {
     display: none !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -5837,8 +5842,20 @@ button.close {
   background: #FFFFFF;
   color: #3DBFBD; }
 
+#site__body .parallax, #site__body .section {
+  background-image: url(../images/dentist-chair-img.jpg);
+  min-height: 660px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 #site__body .affixed__scroll-spy {
-  right: 50px; }
+  right: 50px;
+  display: none; }
+  @media screen and (min-width: 992px) {
+    #site__body .affixed__scroll-spy {
+      display: block; } }
   #site__body .affixed__scroll-spy ul > li > a {
     display: inline-block;
     color: #212A6D;
@@ -5860,6 +5877,43 @@ button.close {
   font-size: 28px;
   outline: none; }
 
+#site__body .jumbotron {
+  background: #FFFFFF;
+  color: #2B5D9B;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 36px;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 30px;
+  padding-bottom: 0; }
+  @media screen and (min-width: 768px) {
+    #site__body .jumbotron {
+      padding: 48px;
+      padding-bottom: 30px;
+      margin-top: 30px;
+      font-size: 72px; } }
+  #site__body .jumbotron > div {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    height: 10px;
+    width: 10px;
+    background: #2B5D9B;
+    display: inline-block;
+    position: relative;
+    bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      #site__body .jumbotron > div {
+        bottom: 25px;
+        height: 15px;
+        width: 15px; } }
+
+#site__body .jumbotron--invert {
+  background: transparent;
+  color: #FFFFFF; }
+
 #site__body .bar__color {
   height: 10px; }
 
@@ -5873,7 +5927,7 @@ button.close {
   background: #2B5D9B; }
 
 @media screen and (min-width: 1200px) {
-  #site__body .container, #site__body .site-header__content {
+  #site__body .container, #site__body .site-header__content, #site__body .about-us__section, #site__body .section__title {
     width: 970px; } }
 
 #site__body h1 {
@@ -6063,10 +6117,10 @@ button.close {
 @media screen and (min-width: 768px) {
   #site__body .catergory-blocks__wrapper > div {
     position: absolute;
-    top: -220px;
+    top: -180px;
     left: 50%;
     transform: translateX(-50%); } }
-  @media screen and (min-width: 768px) and (min-width: 992px) {
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
     #site__body .catergory-blocks__wrapper > div {
       top: -280px; } }
 
@@ -6104,8 +6158,8 @@ button.close {
       width: 33.33333%; } }
   @media screen and (min-width: 768px) {
     #site__body .catergory__block {
-      padding: 60px 0px; } }
-  @media screen and (min-width: 768px) and (min-width: 992px) {
+      padding: 40px 0px; } }
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
     #site__body .catergory__block {
       padding: 90px 0px; } }
 
@@ -6123,5 +6177,92 @@ button.close {
 #site__body .catergory__block__text--mod {
   font-family: "Lato", sans-serif;
   font-weight: bold; }
+
+#site__body .about-us__section {
+  padding-bottom: 60px; }
+
+#site__body .about-us__text-wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0 30px; }
+  #site__body .about-us__text-wrapper:before, #site__body .about-us__text-wrapper:after {
+    content: " ";
+    display: table; }
+  #site__body .about-us__text-wrapper:after {
+    clear: both; }
+  @media screen and (min-width: 768px) {
+    #site__body .about-us__text-wrapper {
+      padding: 0; } }
+
+#site__body .about-us__text {
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  #site__body .about-us__text:before, #site__body .about-us__text:after {
+    content: " ";
+    display: table; }
+  #site__body .about-us__text:after {
+    clear: both; }
+  @media (min-width: 992px) {
+    #site__body .about-us__text {
+      float: left;
+      width: 50%; } }
+  #site__body .about-us__text > p {
+    line-height: 2;
+    margin-bottom: 30px; }
+    @media screen and (min-width: 768px) {
+      #site__body .about-us__text > p {
+        line-height: 1.8;
+        padding: 0 0 0 80px; } }
+
+#site__body .inner__section--invert {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: rgba(33, 42, 109, 0.9);
+  color: #FFFFFF;
+  min-height: 660px;
+  padding-bottom: 60px; }
+  #site__body .inner__section--invert:before, #site__body .inner__section--invert:after {
+    content: " ";
+    display: table; }
+  #site__body .inner__section--invert:after {
+    clear: both; }
+  @media screen and (min-width: 768px) {
+    #site__body .inner__section--invert {
+      padding-bottom: 90px; } }
+  #site__body .inner__section--invert .full-stop {
+    background: #FFFFFF; }
+  #site__body .inner__section--invert a {
+    text-decoration: none;
+    color: #FFFFFF; }
+  #site__body .inner__section--invert h3 {
+    font-family: "Open Sans", sans-serif;
+    margin: 30px 0; }
+
+#site__body .section__content {
+  margin-left: -15px;
+  margin-right: -15px; }
+  #site__body .section__content:before, #site__body .section__content:after {
+    content: " ";
+    display: table; }
+  #site__body .section__content:after {
+    clear: both; }
+
+#site__body .section__content__column {
+  padding: 0px 30px; }
+  @media screen and (min-width: 768px) {
+    #site__body .section__content__column {
+      padding: 0px 25px; } }
+
+#site__body .section__article {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px;
+  padding: 15px; }
+  @media screen and (min-width: 768px) {
+    #site__body .section__article {
+      padding: 30px 60px; } }
 
 /*# sourceMappingURL=styles.css.map */

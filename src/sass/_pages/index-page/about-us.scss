@@ -1,0 +1,32 @@
+#site__body {
+
+    .about-us__section {
+        @extend .container;
+        padding-bottom: $mp-triple;
+    }
+
+    .about-us__text-wrapper {
+        @include make-row;
+        padding: 0 $mp-double;
+
+            @include mediaQuery--min($bp-sm) {
+                padding: 0;
+            }
+
+    }
+
+    .about-us__text {
+        @include make-row;
+        @include make-md-column(6);
+
+            > p {
+                line-height: 2;
+                margin-bottom: $mp-double;
+
+                    @include mediaQuery--min($bp-sm) {
+                        line-height: 1.8;
+                        padding: 0 0 0 80px;
+                    }
+            }
+    }
+}

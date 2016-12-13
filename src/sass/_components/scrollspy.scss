@@ -4,8 +4,12 @@
 
     .affixed__scroll-spy {
         @extend .navbar;
-        @extend .hidden-xs;
         right: 50px;
+        display: none;
+
+            @include mediaQuery--min($bp-md){
+                display: block;
+            }
 
             ul {}
 

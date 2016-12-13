@@ -30,6 +30,7 @@
 @import '_components/parallex';
 @import '_components/scrollspy';
 @import '_components/buttons';
+@import '_components/jumbotron';
 
 //========  3, Layout =========//
 
@@ -41,4 +42,6 @@
 
 @import '_pages/index-page/index';
 @import '_pages/index-page/catergory-blocks';
+@import '_pages/index-page/about-us';
+@import '_pages/index-page/our-services';
 
