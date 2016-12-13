@@ -1,5 +1,5 @@
 /*===========================
-        VARIABLES
+        GLOBAL VARIABLES
 =============================*/
 
 /* color
@@ -76,3 +76,15 @@ $breakpoints: (
 $bp-sm: map-get($map: $breakpoints, $key: sm);
 $bp-md: map-get($map: $breakpoints, $key: md);
 $bp-lg: map-get($map: $breakpoints, $key: lg);
+
+/*===========================================
+
+            ELEMENT VARIABLES
+
+==============================================*/
+
+/* infographic */
+
+$infographic-height: 180px;
+$infographic-title-font-size-xs: 48px;
+$infographic-title-font-size-sm: 56px;
