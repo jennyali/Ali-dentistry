@@ -1,0 +1,11 @@
+#site__body{
+
+    .parallax{
+        background-image: url(../images/dentist-chair-img.jpg);
+        min-height: 660px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
