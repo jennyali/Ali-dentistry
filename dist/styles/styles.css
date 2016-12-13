@@ -5766,7 +5766,7 @@ button.close {
 /* font themes
 -------------------------*/
 /*===========================
-        VARIABLES
+        GLOBAL VARIABLES
 =============================*/
 /* color
 -----------------------*/
@@ -5778,6 +5778,12 @@ button.close {
 -----------------------*/
 /* breakpoints
 -----------------------*/
+/*===========================================
+
+            ELEMENT VARIABLES
+
+==============================================*/
+/* infographic */
 #site__body #main-page__carousel {
   max-height: 850px;
   overflow: hidden;
@@ -6264,5 +6270,41 @@ button.close {
   @media screen and (min-width: 768px) {
     #site__body .section__article {
       padding: 30px 60px; } }
+
+#site__body .infographic {
+  background: #FFFFFF;
+  color: #2B5D9B;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    #site__body .infographic::before {
+      background: #FFFFFF;
+      height: 180px;
+      width: 100%;
+      position: absolute;
+      left: 0px; } }
+  #site__body .infographic h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: bold; }
+    @media screen and (min-width: 768px) {
+      #site__body .infographic h1 {
+        font-size: 56px; } }
+
+#site__body .infographic--contrast-col {
+  background: #3DBFBD;
+  color: #FFFFFF; }
+  @media screen and (min-width: 768px) {
+    #site__body .infographic--contrast-col::before {
+      background: #3DBFBD;
+      color: #FFFFFF; } }
+
+#site__body .infographic__inner-row {
+  padding: 30px 0; }
+
+#site__body .infographic__inner-column {
+  padding-bottom: 15px; }
+  @media screen and (min-width: 768px) {
+    #site__body .infographic__inner-column {
+      padding-bottom: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

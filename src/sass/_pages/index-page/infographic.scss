@@ -1,0 +1,44 @@
+
+#site__body {
+
+    .infographic {
+        @include colorTheme__base;
+        text-align: center;
+
+            &::before {
+                @include mediaQuery--min($bp-sm) {
+                    background: $light;
+                    height: $infographic-height;
+                    width: 100%;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+
+            h1 {
+                font-family: $font-family-paragraph;
+                font-size: $infographic-title-font-size-xs;
+                font-weight: bold;
+
+                    @include mediaQuery--min($bp-sm) {font-size: $infographic-title-font-size-sm;}
+            }
+    }
+
+    .infographic--contrast-col {
+        @include colorTheme__contrast--invert;
+
+            &::before {
+                @include mediaQuery--min($bp-sm) {
+                    @include colorTheme__contrast--invert; 
+                }
+            }
+    }
+
+        .infographic__inner-row {padding: $mp-double 0;}
+
+            .infographic__inner-column {
+                padding-bottom: $mp-default;
+
+                    @include mediaQuery--min($bp-sm) {padding-bottom: 0;}
+            }
+}
