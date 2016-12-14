@@ -37,6 +37,8 @@
 @import '_layout/body';
 @import '_layout/header';
 @import '_layout/footer';
+@import '_layout/section';
+@import '_layout/article';
 
 //========  4, Pages ==========//
 
@@ -45,4 +47,6 @@
 @import '_pages/index-page/about-us';
 @import '_pages/index-page/our-services';
 @import '_pages/index-page/infographic';
+@import '_pages/index-page/dentists';
+@import '_pages/index-page/contact-us';
 

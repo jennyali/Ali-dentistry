@@ -1,0 +1,39 @@
+#site__body {
+
+    .section__article {
+        background-color: rgba($light, 0.1);
+        margin-bottom: $mp-default;
+        padding: $mp-default;
+        text-align: center;
+
+            @include mediaQuery--min($bp-sm){padding: $mp-double $mp-triple;}
+    }
+
+    .section__article--bg-clear{
+        background: transparent;
+        padding: $mp-double;
+    }
+
+        .article__quotemarks {
+            font-size: 72px;
+            color: $contrast-color;
+            margin: 0;
+
+                @include mediaQuery--min($bp-md) {
+                    margin: initial;
+                }
+        }
+
+
+        .article__text {
+            font-weight: normal;
+
+                @include mediaQuery--min($bp-md) {
+                    font-size: $font-size-sm;
+                }
+        }
+
+        .article__text--italic {
+
+        }
+}

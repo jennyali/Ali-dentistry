@@ -1503,24 +1503,24 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, #site__body .site-header__content, #site__body .about-us__section, #site__body .section__title {
+.container, #site__body .site-header__content, #site__body .section__title, #site__body .about-us__section {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, #site__body .site-header__content:before, #site__body .about-us__section:before, #site__body .section__title:before, .container:after, #site__body .site-header__content:after, #site__body .about-us__section:after, #site__body .section__title:after {
+  .container:before, #site__body .site-header__content:before, #site__body .section__title:before, #site__body .about-us__section:before, .container:after, #site__body .site-header__content:after, #site__body .section__title:after, #site__body .about-us__section:after {
     content: " ";
     display: table; }
-  .container:after, #site__body .site-header__content:after, #site__body .about-us__section:after, #site__body .section__title:after {
+  .container:after, #site__body .site-header__content:after, #site__body .section__title:after, #site__body .about-us__section:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container, #site__body .site-header__content, #site__body .about-us__section, #site__body .section__title {
+    .container, #site__body .site-header__content, #site__body .section__title, #site__body .about-us__section {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container, #site__body .site-header__content, #site__body .about-us__section, #site__body .section__title {
+    .container, #site__body .site-header__content, #site__body .section__title, #site__body .about-us__section {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .container, #site__body .site-header__content, #site__body .about-us__section, #site__body .section__title {
+    .container, #site__body .site-header__content, #site__body .section__title, #site__body .about-us__section {
       width: 1170px; } }
 
 .container-fluid, #site__body .nav-inline--base, #site__body .section {
@@ -3699,15 +3699,15 @@ tbody.collapse.in {
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header, #site__body .site-header__content > .navbar-header, #site__body .about-us__section > .navbar-header, #site__body .section__title > .navbar-header,
-.container > .navbar-collapse, #site__body .site-header__content > .navbar-collapse, #site__body .about-us__section > .navbar-collapse, #site__body .section__title > .navbar-collapse,
+.container > .navbar-header, #site__body .site-header__content > .navbar-header, #site__body .section__title > .navbar-header, #site__body .about-us__section > .navbar-header,
+.container > .navbar-collapse, #site__body .site-header__content > .navbar-collapse, #site__body .section__title > .navbar-collapse, #site__body .about-us__section > .navbar-collapse,
 .container-fluid > .navbar-header, #site__body .nav-inline--base > .navbar-header, #site__body .section > .navbar-header,
 .container-fluid > .navbar-collapse, #site__body .nav-inline--base > .navbar-collapse, #site__body .section > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
-    .container > .navbar-header, #site__body .site-header__content > .navbar-header, #site__body .about-us__section > .navbar-header, #site__body .section__title > .navbar-header,
-    .container > .navbar-collapse, #site__body .site-header__content > .navbar-collapse, #site__body .about-us__section > .navbar-collapse, #site__body .section__title > .navbar-collapse,
+    .container > .navbar-header, #site__body .site-header__content > .navbar-header, #site__body .section__title > .navbar-header, #site__body .about-us__section > .navbar-header,
+    .container > .navbar-collapse, #site__body .site-header__content > .navbar-collapse, #site__body .section__title > .navbar-collapse, #site__body .about-us__section > .navbar-collapse,
     .container-fluid > .navbar-header, #site__body .nav-inline--base > .navbar-header, #site__body .section > .navbar-header,
     .container-fluid > .navbar-collapse, #site__body .nav-inline--base > .navbar-collapse, #site__body .section > .navbar-collapse {
       margin-right: 0;
@@ -3751,7 +3751,7 @@ tbody.collapse.in {
   .navbar-brand > img {
     display: block; }
   @media (min-width: 768px) {
-    .navbar > .container .navbar-brand, #site__body .affixed__scroll-spy > .container .navbar-brand, #site__body .navbar > .site-header__content .navbar-brand, #site__body .affixed__scroll-spy > .site-header__content .navbar-brand, #site__body .navbar > .about-us__section .navbar-brand, #site__body .affixed__scroll-spy > .about-us__section .navbar-brand, #site__body .navbar > .section__title .navbar-brand, #site__body .affixed__scroll-spy > .section__title .navbar-brand,
+    .navbar > .container .navbar-brand, #site__body .affixed__scroll-spy > .container .navbar-brand, #site__body .navbar > .site-header__content .navbar-brand, #site__body .affixed__scroll-spy > .site-header__content .navbar-brand, #site__body .navbar > .section__title .navbar-brand, #site__body .affixed__scroll-spy > .section__title .navbar-brand, #site__body .navbar > .about-us__section .navbar-brand, #site__body .affixed__scroll-spy > .about-us__section .navbar-brand,
     .navbar > .container-fluid .navbar-brand, #site__body .affixed__scroll-spy > .container-fluid .navbar-brand, #site__body
     .navbar > .nav-inline--base .navbar-brand, #site__body .affixed__scroll-spy > .nav-inline--base .navbar-brand, #site__body
     .navbar > .section .navbar-brand, #site__body .affixed__scroll-spy > .section .navbar-brand {
@@ -4278,20 +4278,20 @@ a.badge:hover, a.badge:focus {
     font-weight: 200; }
   .jumbotron > hr, #site__body .jumbotron > hr {
     border-top-color: #d5d5d5; }
-  .container .jumbotron, .container #site__body .jumbotron, #site__body .container .jumbotron, #site__body .site-header__content .jumbotron, #site__body .about-us__section .jumbotron, #site__body .section__title .jumbotron,
+  .container .jumbotron, .container #site__body .jumbotron, #site__body .container .jumbotron, #site__body .site-header__content .jumbotron, #site__body .section__title .jumbotron, #site__body .about-us__section .jumbotron,
   .container-fluid .jumbotron,
   .container-fluid #site__body .jumbotron, #site__body
   .container-fluid .jumbotron, #site__body .nav-inline--base .jumbotron, #site__body .section .jumbotron {
     border-radius: 6px;
     padding-left: 15px;
     padding-right: 15px; }
-  .jumbotron .container, #site__body .jumbotron .container, .jumbotron #site__body .site-header__content, #site__body .jumbotron .site-header__content, .jumbotron #site__body .about-us__section, #site__body .jumbotron .about-us__section, .jumbotron #site__body .section__title, #site__body .jumbotron .section__title {
+  .jumbotron .container, #site__body .jumbotron .container, .jumbotron #site__body .site-header__content, #site__body .jumbotron .site-header__content, .jumbotron #site__body .section__title, #site__body .jumbotron .section__title, .jumbotron #site__body .about-us__section, #site__body .jumbotron .about-us__section {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron, #site__body .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron, .container #site__body .jumbotron, #site__body .container .jumbotron, #site__body .site-header__content .jumbotron, #site__body .about-us__section .jumbotron, #site__body .section__title .jumbotron,
+      .container .jumbotron, .container #site__body .jumbotron, #site__body .container .jumbotron, #site__body .site-header__content .jumbotron, #site__body .section__title .jumbotron, #site__body .about-us__section .jumbotron,
       .container-fluid .jumbotron,
       .container-fluid #site__body .jumbotron, #site__body
       .container-fluid .jumbotron, #site__body .nav-inline--base .jumbotron, #site__body .section .jumbotron {
@@ -5848,9 +5848,9 @@ button.close {
   background: #FFFFFF;
   color: #3DBFBD; }
 
-#site__body .parallax, #site__body .section {
-  background-image: url(../images/dentist-chair-img.jpg);
-  min-height: 660px;
+#site__body {
+  background-image: "url(../images/dentist-chair-img.jpg)";
+  min-height: "660px";
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -5916,7 +5916,7 @@ button.close {
         height: 15px;
         width: 15px; } }
 
-#site__body .jumbotron--invert {
+#site__body .jumbotron--invert, #site__body .section--inverted .section__jumbotron {
   background: transparent;
   color: #FFFFFF; }
 
@@ -5933,7 +5933,7 @@ button.close {
   background: #2B5D9B; }
 
 @media screen and (min-width: 1200px) {
-  #site__body .container, #site__body .site-header__content, #site__body .about-us__section, #site__body .section__title {
+  #site__body .container, #site__body .site-header__content, #site__body .section__title, #site__body .about-us__section {
     width: 970px; } }
 
 #site__body h1 {
@@ -6099,11 +6099,117 @@ button.close {
   #site__body .site-header__title a, #site__body .site-header__title li {
     text-decoration: none; }
 
+#site__body .section__wrapper--bg {
+  background-color: #212A6D; }
+
+#site__body .section {
+  padding-bottom: 60px; }
+
+#site__body .section--inverted {
+  background: #212A6D;
+  color: #FFFFFF;
+  position: relative; }
+  #site__body .section--inverted .jumbotron__square {
+    background-color: #FFFFFF; }
+
+#site__body .inner__section--invert {
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: rgba(33, 42, 109, 0.9);
+  color: #FFFFFF;
+  min-height: 660px;
+  padding-bottom: 90px; }
+  #site__body .inner__section--invert:before, #site__body .inner__section--invert:after {
+    content: " ";
+    display: table; }
+  #site__body .inner__section--invert:after {
+    clear: both; }
+  #site__body .inner__section--invert .full-stop {
+    background: #FFFFFF; }
+  #site__body .inner__section--invert a {
+    text-decoration: none;
+    color: #FFFFFF; }
+  #site__body .inner__section--invert h3 {
+    font-family: "Open Sans", sans-serif;
+    margin: 30px 0; }
+
+#site__body .section__content {
+  margin-left: -15px;
+  margin-right: -15px; }
+  #site__body .section__content:before, #site__body .section__content:after {
+    content: " ";
+    display: table; }
+  #site__body .section__content:after {
+    clear: both; }
+
+#site__body .section__figure {
+  text-align: center;
+  margin-bottom: 60px; }
+
+#site__body .figure__img {
+  max-height: 250px; }
+
+#site__body .figure__figcaption__title {
+  color: #212A6D; }
+  #site__body .figure__figcaption__title small {
+    color: rgba(33, 42, 109, 0.8); }
+
+#site__body .section__content__column {
+  padding: 0px 30px; }
+  @media screen and (min-width: 768px) {
+    #site__body .section__content__column {
+      padding: 0px 25px; } }
+
+#site__body .section__article {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px;
+  padding: 15px;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    #site__body .section__article {
+      padding: 30px 60px; } }
+
+#site__body .section__article--bg-clear {
+  background: transparent;
+  padding: 30px; }
+
+#site__body .article__quotemarks {
+  font-size: 72px;
+  color: #3DBFBD;
+  margin: 0; }
+  @media screen and (min-width: 992px) {
+    #site__body .article__quotemarks {
+      margin: initial; } }
+
+#site__body .article__text {
+  font-weight: normal; }
+  @media screen and (min-width: 992px) {
+    #site__body .article__text {
+      font-size: 12px; } }
+
 #site__body .main-content__wrapper > section {
   padding: 0px; }
 
 #site__body .main-content__wrapper {
   position: relative; }
+
+#page-parallax {
+  background-image: url(../images/smile-img2.jpg);
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none; }
+  @media screen and (min-width: 992px) {
+    #page-parallax {
+      display: block; } }
+
+.parallax__container img {
+  width: 100%; }
+  @media screen and (min-width: 992px) {
+    .parallax__container img {
+      display: none; } }
 
 #site__body .catergory-blocks__wrapper {
   margin-left: -15px;
@@ -6224,52 +6330,14 @@ button.close {
         line-height: 1.8;
         padding: 0 0 0 80px; } }
 
-#site__body .inner__section--invert {
-  margin-left: -15px;
-  margin-right: -15px;
-  background-color: rgba(33, 42, 109, 0.9);
-  color: #FFFFFF;
+#site__body #our-services {
+  background-image: url(../images/dentist-chair-img.jpg);
   min-height: 660px;
-  padding-bottom: 60px; }
-  #site__body .inner__section--invert:before, #site__body .inner__section--invert:after {
-    content: " ";
-    display: table; }
-  #site__body .inner__section--invert:after {
-    clear: both; }
-  @media screen and (min-width: 768px) {
-    #site__body .inner__section--invert {
-      padding-bottom: 90px; } }
-  #site__body .inner__section--invert .full-stop {
-    background: #FFFFFF; }
-  #site__body .inner__section--invert a {
-    text-decoration: none;
-    color: #FFFFFF; }
-  #site__body .inner__section--invert h3 {
-    font-family: "Open Sans", sans-serif;
-    margin: 30px 0; }
-
-#site__body .section__content {
-  margin-left: -15px;
-  margin-right: -15px; }
-  #site__body .section__content:before, #site__body .section__content:after {
-    content: " ";
-    display: table; }
-  #site__body .section__content:after {
-    clear: both; }
-
-#site__body .section__content__column {
-  padding: 0px 30px; }
-  @media screen and (min-width: 768px) {
-    #site__body .section__content__column {
-      padding: 0px 25px; } }
-
-#site__body .section__article {
-  background-color: rgba(255, 255, 255, 0.1);
-  margin-bottom: 15px;
-  padding: 15px; }
-  @media screen and (min-width: 768px) {
-    #site__body .section__article {
-      padding: 30px 60px; } }
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 0px; }
 
 #site__body .infographic {
   background: #FFFFFF;
@@ -6306,5 +6374,19 @@ button.close {
   @media screen and (min-width: 768px) {
     #site__body .infographic__inner-column {
       padding-bottom: 0; } }
+
+#dentist-portrait-1 {
+  border-bottom: 10px solid #2B5D9B; }
+
+#dentist-portrait-2 {
+  border-bottom: 10px solid #212A6D; }
+
+#dentist-portrait-3 {
+  border-bottom: 10px solid #3DBFBD; }
+
+#site__body .map__wrapper {
+  margin: 60px 0; }
+  #site__body .map__wrapper img {
+    width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
