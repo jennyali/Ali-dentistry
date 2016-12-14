@@ -9,4 +9,21 @@
 
     }
 
+
 }
+
+#page-parallax {
+     @include parallax(url(../images/smile-img2.jpg), 600px);
+     display: none;
+
+        @include mediaQuery--min($bp-md) {display: block;}
+}
+
+.parallax__container {
+    img{
+        width: 100%;
+            
+            @include mediaQuery--min($bp-md) {display: none;}
+    }    
+}
+
