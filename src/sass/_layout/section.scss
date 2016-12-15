@@ -61,10 +61,10 @@
                         .figure__figcaption {}
 
                             .figure__figcaption__title {
-                                color: $secondary-color;
+                                color: $dark;
 
                                     small {
-                                        color: rgba($secondary-color, 0.8);
+                                        color: rgba($dark, 0.7);
                                     }
                             }
 

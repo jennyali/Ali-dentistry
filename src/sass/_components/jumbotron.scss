@@ -1,6 +1,6 @@
 #site__body{
 
-    .jumbotron {
+    .jumbotron{
         @extend .jumbotron;
         @include colorTheme__base;
         text-transform: uppercase;
@@ -17,6 +17,10 @@
                 padding-bottom: $mp-double; 
                 margin-top: $mp-double;
                 font-size: 72px;
+            }
+
+            h1{
+                font-family: $font-family-heading;
             }
 
             > div {

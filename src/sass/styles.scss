@@ -31,6 +31,7 @@
 @import '_components/scrollspy';
 @import '_components/buttons';
 @import '_components/jumbotron';
+@import '_components/form';
 
 //========  3, Layout =========//
 
@@ -49,4 +50,5 @@
 @import '_pages/index-page/infographic';
 @import '_pages/index-page/dentists';
 @import '_pages/index-page/contact-us';
+@import '_pages/sub-page/booking.scss';
 

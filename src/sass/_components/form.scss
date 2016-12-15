@@ -1,0 +1,31 @@
+#site__body {
+
+    .contact__form {
+        font-family: $font-family-paragraph;
+        color: $dark;
+    }
+    
+        .form__input {
+            @extend .form-control;
+            font-size: $font-size-md;
+            margin: $mp-double 0;
+
+                @include mediaQuery--min($bp-sm){
+                    font-size: $font-size-base;
+                    margin: 0;
+            }
+        }
+
+        .form__input--unstyled {
+            border-radius: 0;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            transition: none;
+
+                &:focus {
+                    border-color: none;
+                    box-shadow: none;
+        }
+    }
+}

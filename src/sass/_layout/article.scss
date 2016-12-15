@@ -36,4 +36,43 @@
         .article__text--italic {
 
         }
+
+    .sub-page__article {
+        margin: 0 $mp-default;
+        border-bottom: 1px solid $dark;
+
+            @include mediaQuery--min($bp-sm){
+                border: none;
+            }
+    }
+
+        .sub-page__article__inner {
+            text-align: left;
+
+                @include mediaQuery--min($bp-sm){
+                    text-align: center;
+                    overflow: scroll;
+                    height: 260px;
+                }
+        }
+
+            .article__inner__title {
+                color: $dark;
+            }
+
+            .article__inner__data {
+                margin-top: $mp-lg;
+                font-size: $font-size-md;
+            }
+
+            .article__inner__description {
+                margin-top: $mp-triple;
+                font-size: $font-size-md;
+                display: none;
+
+                    @include mediaQuery--min($bp-sm){
+                        display: block;
+                    }
+            }
+
 }

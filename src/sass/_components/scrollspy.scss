@@ -18,14 +18,15 @@
 
             ul > li > a {
                 display: inline-block;
-                color: $secondary-color;
+                color: darken($secondary-color, 30%);
                 text-transform: capitalize;
                 opacity: 0;
                 transition: opacity 0.25s;
+                //font-weight: bold;
             }
 
             span {
-                color: $secondary-color;
+                color: darken($secondary-color, 30%);
                 position: relative;
                 top: 2px;
             }
