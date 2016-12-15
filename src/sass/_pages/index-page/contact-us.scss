@@ -1,11 +1,7 @@
 #site__body {
 
-    #contact-us{
-        color: $dark;
-    }
-
     .map__wrapper {
-        margin: $mp-triple 0;
+        margin: 0 0 $mp-triple 0;
         overflow: hidden;
 
         img{
@@ -14,5 +10,22 @@
             left: 50%;
             transform: translateX(-50%);
         }
+    }
+}
+
+#contact-us{
+    color: $dark;
+
+    .jumbotron {
+        margin: 0;
+
+            @include mediaQuery--min($bp-sm) {margin: $mp-double;}
+    }
+
+    .contact-us__column{
+        text-align: center;
+        margin-bottom: $mp-triple;
+            
+            h3{margin: $mp-double 0;}
     }
 }

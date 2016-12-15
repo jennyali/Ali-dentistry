@@ -1,0 +1,19 @@
+#site__body {
+
+    #services {
+        padding: 0 $mp-double;
+    }
+
+    .section__content--sub-page {
+        padding-bottom: $mp-triple;
+
+        .jumbotron {
+             @include mediaQuery--max($bp-sm){
+                padding-top: 0;
+                margin-top: 0;
+                margin-bottom: $mp-triple;
+            }
+        }
+    }
+
+}

@@ -1,6 +1,6 @@
 #site__body{
 
-    .jumbotron {
+    .jumbotron{
         @extend .jumbotron;
         @include colorTheme__base;
         text-transform: uppercase;

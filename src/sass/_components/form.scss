@@ -2,11 +2,21 @@
 
     .contact__form {
         font-family: $font-family-paragraph;
-       color: $dark;
+        color: $dark;
     }
+    
+        .form__input {
+            @extend .form-control;
+            font-size: $font-size-md;
+            margin: $mp-double 0;
+
+                @include mediaQuery--min($bp-sm){
+                    font-size: $font-size-base;
+                    margin: 0;
+            }
+        }
 
         .form__input--unstyled {
-            @extend .form-control;
             border-radius: 0;
             border: none;
             outline: none;
@@ -16,8 +26,6 @@
                 &:focus {
                     border-color: none;
                     box-shadow: none;
-                }
         }
-
-        .form__btn {}
+    }
 }
