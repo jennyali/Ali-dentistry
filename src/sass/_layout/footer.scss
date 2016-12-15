@@ -1,0 +1,27 @@
+#site__body {
+
+    .footer {
+        color: $dark;
+    }
+
+        .footer__column:first-child {
+            opacity: 0.8;
+        }
+
+            .footer__column__btn-group {
+                text-align: center;
+
+                    a {
+                        border: none;
+                        background: none;
+                        padding: 0;
+                        font-size: $font-size-lg;
+                        color: $dark;
+                    }
+            }
+
+            .footer__column__copyright {
+                text-align: center;
+            }
+
+}

@@ -1,0 +1,23 @@
+#site__body {
+
+    .contact__form {
+        font-family: $font-family-paragraph;
+       color: $dark;
+    }
+
+        .form__input--unstyled {
+            @extend .form-control;
+            border-radius: 0;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            transition: none;
+
+                &:focus {
+                    border-color: none;
+                    box-shadow: none;
+                }
+        }
+
+        .form__btn {}
+}

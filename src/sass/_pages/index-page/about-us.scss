@@ -20,6 +20,7 @@
         @include make-md-column(6);
 
             > p {
+                color: $dark;
                 line-height: 2;
                 margin-bottom: $mp-double;
 

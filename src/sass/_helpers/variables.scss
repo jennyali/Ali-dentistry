@@ -10,7 +10,7 @@ $colors : (
     secondary: #212A6D,
     contrast: #3DBFBD,
     light: #FFFFFF,
-    dark: #000000,
+    dark: lighten(#000000, 30%),
 );
 
 $primary-color: map-get($map: $colors, $key: primary);

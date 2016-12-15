@@ -6,4 +6,16 @@
         font-size: 28px;
         outline: none;
     }
+
+    .btn-primary {
+        @extend .btn-primary;
+        background: $contrast-color;
+        border: none;
+        border-radius: 0;
+        transition: background 0.25s;
+
+            &:hover{
+                background: darken($contrast-color, 10%);
+            }
+    }
 }

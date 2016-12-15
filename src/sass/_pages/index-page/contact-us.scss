@@ -1,13 +1,18 @@
 #site__body {
 
-
+    #contact-us{
+        color: $dark;
+    }
 
     .map__wrapper {
         margin: $mp-triple 0;
+        overflow: hidden;
 
         img{
-            width: 100%;
-
+            position: relative;
+            top: 2px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
