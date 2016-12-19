@@ -1,94 +1,98 @@
 
 #site__body {
 
-    .calander {
+    .calendar__column {
+        padding: 0 $mp-double;
     }
 
-        .calander__title {
-            margin: $mp-double 0;
-            color: $dark;
+        .calander {
+
         }
-
-
-        .calander__text--time {
-            color: $contrast-color;
-            font-size: $font-size-md;
-        }
-
-        .calander__inner-container {
-            margin: $mp-double 0;
-        }
-
-            .calander__months {
-                display: flex;
-                margin-bottom: $mp-double;
+            .calander__title {
+                margin: $mp-double 0;
+                color: $dark;
             }
 
-                .current-month {}
 
-                .prev-month {
-                    padding-right: 0px;
+            .calander__text--time {
+                color: $contrast-color;
+                font-size: $font-size-md;
+            }
+
+            .calander__inner-container {
+                margin: $mp-double 0;
+            }
+
+                .calander__months {
+                    display: flex;
+                    margin-bottom: $mp-double;
                 }
 
-                .next-month {
-                    padding-left: 0px;
-                    
-                    .btn__calander--switch{
-                        border-left: none;
+                    .current-month {}
+
+                    .prev-month {
+                        padding-right: 0px;
+                    }
+
+                    .next-month {
+                        padding-left: 0px;
+                        
+                        .btn__calander--switch{
+                            border-left: none;
+                        }
+                    }
+
+                    .todays-date {}
+
+                .calander__weekdays {
+                    justify-content: space-around;
+                    display: flex;
+                    font-weight: bold;
+                }
+
+                    .weekday-name {}
+
+                .calander__days {            
+                    display: flex;
+
+                    tbody{
+                        width: 100%;
+                    }
+
+                    tr{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    td {
+                        border: 2px solid transparent;
+                        width: 15%;
+                        height: 60px;
+                        padding: 15px;
+                        color: $dark;
+                        opacity: 0.8;
+
+                            &:hover{
+                                border: 2px solid $contrast-color;
+                            }
                     }
                 }
 
-                .todays-date {}
+                    .weekday-number {}
 
-            .calander__weekdays {
-                justify-content: space-around;
-                display: flex;
-                font-weight: bold;
-            }
+                .calander__weekly-click {}
 
-                .weekday-name {}
+                    .weekly-view-click {
+                        margin: $mp-double 0px;
 
-            .calander__days {            
-                display: flex;
+                            button{
+                                background: none;
+                                border: none;
+                                color: $contrast-color;
+                            }
 
-                tbody{
-                    width: 100%;
-                }
-
-                tr{
-                    display: flex;
-                    justify-content: space-between;
-                }
-
-                td {
-                    border: 2px solid transparent;
-                    width: 15%;
-                    height: 60px;
-                    padding: 15px;
-                    color: $dark;
-                    opacity: 0.8;
-
-                        &:hover{
-                            border: 2px solid $contrast-color;
-                        }
-                }
-            }
-
-                .weekday-number {}
-
-            .calander__weekly-click {}
-
-                .weekly-view-click {
-                    margin: $mp-double 0px;
-
-                        button{
-                            background: none;
-                            border: none;
-                            color: $contrast-color;
-                        }
-
-                        span{
-                            margin-left: $mp-sm;
-                        }
-                }
+                            span{
+                                margin-left: $mp-sm;
+                            }
+                    }
 }

@@ -42,6 +42,10 @@ var $dropdownMenu = $('#header__dropdown');
 /*                    EVENTS
 ------------------------------------------------------*/
 
+$('#calendar').fullCalendar({
+    
+})
+
 $window.on('resize', function(event){         
     windowWidth = window.innerWidth;
     toggleEl(windowWidth, '#header__dropdown');
