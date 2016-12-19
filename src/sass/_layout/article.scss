@@ -75,4 +75,34 @@
                     }
             }
 
+    .sub-page__article--booking{
+        margin: 0 $mp-default;
+
+            @include mediaQuery--max($bp-md){
+                display: none;
+            }
+
+        button {
+            width: 100%;
+            opacity: 0.5;
+        }
+
+        .sub-page__article__inner {
+            text-align: left;
+            overflow: hidden;
+            height: 100%;
+            border-bottom: 1px solid $dark;
+            padding-bottom: $mp-lg;
+        }
+
+            .article__inner__description {
+                display: none;
+            }
+
+
+    }
+
+
+
+
 }

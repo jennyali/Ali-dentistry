@@ -2880,51 +2880,62 @@ fieldset[disabled] a.btn {
     color: #fff;
     background-color: #333; }
 
-.btn-primary, #site__body .btn-primary {
+.btn-primary, #site__body .btn-primary, #site__body .btn-primary--invert {
   color: #fff;
   background-color: #337ab7;
   border-color: #2e6da4; }
-  .btn-primary:focus, #site__body .btn-primary:focus, .btn-primary.focus, #site__body .focus.btn-primary {
+  .btn-primary:focus, #site__body .btn-primary:focus, #site__body .btn-primary--invert:focus, .btn-primary.focus, #site__body .focus.btn-primary, #site__body .focus.btn-primary--invert {
     color: #fff;
     background-color: #286090;
     border-color: #122b40; }
-  .btn-primary:hover, #site__body .btn-primary:hover {
+  .btn-primary:hover, #site__body .btn-primary:hover, #site__body .btn-primary--invert:hover {
     color: #fff;
     background-color: #286090;
     border-color: #204d74; }
-  .btn-primary:active, #site__body .btn-primary:active, .btn-primary.active, #site__body .active.btn-primary,
+  .btn-primary:active, #site__body .btn-primary:active, #site__body .btn-primary--invert:active, .btn-primary.active, #site__body .active.btn-primary, #site__body .active.btn-primary--invert,
   .open > .btn-primary.dropdown-toggle, #site__body
-  .open > .dropdown-toggle.btn-primary {
+  .open > .dropdown-toggle.btn-primary, #site__body
+  .open > .dropdown-toggle.btn-primary--invert {
     color: #fff;
     background-color: #286090;
     border-color: #204d74; }
-    .btn-primary:active:hover, #site__body .btn-primary:active:hover, .btn-primary:active:focus, #site__body .btn-primary:active:focus, .btn-primary:active.focus, #site__body .btn-primary:active.focus, .btn-primary.active:hover, #site__body .active.btn-primary:hover, .btn-primary.active:focus, #site__body .active.btn-primary:focus, .btn-primary.active.focus, #site__body .active.focus.btn-primary,
+    .btn-primary:active:hover, #site__body .btn-primary:active:hover, #site__body .btn-primary--invert:active:hover, .btn-primary:active:focus, #site__body .btn-primary:active:focus, #site__body .btn-primary--invert:active:focus, .btn-primary:active.focus, #site__body .btn-primary:active.focus, #site__body .btn-primary--invert:active.focus, .btn-primary.active:hover, #site__body .active.btn-primary:hover, #site__body .active.btn-primary--invert:hover, .btn-primary.active:focus, #site__body .active.btn-primary:focus, #site__body .active.btn-primary--invert:focus, .btn-primary.active.focus, #site__body .active.focus.btn-primary, #site__body .active.focus.btn-primary--invert,
     .open > .btn-primary.dropdown-toggle:hover, #site__body
-    .open > .dropdown-toggle.btn-primary:hover,
+    .open > .dropdown-toggle.btn-primary:hover, #site__body
+    .open > .dropdown-toggle.btn-primary--invert:hover,
     .open > .btn-primary.dropdown-toggle:focus, #site__body
-    .open > .dropdown-toggle.btn-primary:focus,
+    .open > .dropdown-toggle.btn-primary:focus, #site__body
+    .open > .dropdown-toggle.btn-primary--invert:focus,
     .open > .btn-primary.dropdown-toggle.focus, #site__body
-    .open > .dropdown-toggle.focus.btn-primary {
+    .open > .dropdown-toggle.focus.btn-primary, #site__body
+    .open > .dropdown-toggle.focus.btn-primary--invert {
       color: #fff;
       background-color: #204d74;
       border-color: #122b40; }
-  .btn-primary:active, #site__body .btn-primary:active, .btn-primary.active, #site__body .active.btn-primary,
+  .btn-primary:active, #site__body .btn-primary:active, #site__body .btn-primary--invert:active, .btn-primary.active, #site__body .active.btn-primary, #site__body .active.btn-primary--invert,
   .open > .btn-primary.dropdown-toggle, #site__body
-  .open > .dropdown-toggle.btn-primary {
+  .open > .dropdown-toggle.btn-primary, #site__body
+  .open > .dropdown-toggle.btn-primary--invert {
     background-image: none; }
-  .btn-primary.disabled:hover, #site__body .disabled.btn-primary:hover, .btn-primary.disabled:focus, #site__body .disabled.btn-primary:focus, .btn-primary.disabled.focus, #site__body .disabled.focus.btn-primary, .btn-primary[disabled]:hover, #site__body [disabled].btn-primary:hover, .btn-primary[disabled]:focus, #site__body [disabled].btn-primary:focus, .btn-primary[disabled].focus, #site__body [disabled].focus.btn-primary,
+  .btn-primary.disabled:hover, #site__body .disabled.btn-primary:hover, #site__body .disabled.btn-primary--invert:hover, .btn-primary.disabled:focus, #site__body .disabled.btn-primary:focus, #site__body .disabled.btn-primary--invert:focus, .btn-primary.disabled.focus, #site__body .disabled.focus.btn-primary, #site__body .disabled.focus.btn-primary--invert, .btn-primary[disabled]:hover, #site__body [disabled].btn-primary:hover, #site__body [disabled].btn-primary--invert:hover, .btn-primary[disabled]:focus, #site__body [disabled].btn-primary:focus, #site__body [disabled].btn-primary--invert:focus, .btn-primary[disabled].focus, #site__body [disabled].focus.btn-primary, #site__body [disabled].focus.btn-primary--invert,
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] #site__body .btn-primary:hover, #site__body
   fieldset[disabled] .btn-primary:hover,
+  fieldset[disabled] #site__body .btn-primary--invert:hover, #site__body
+  fieldset[disabled] .btn-primary--invert:hover,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] #site__body .btn-primary:focus, #site__body
   fieldset[disabled] .btn-primary:focus,
+  fieldset[disabled] #site__body .btn-primary--invert:focus, #site__body
+  fieldset[disabled] .btn-primary--invert:focus,
   fieldset[disabled] .btn-primary.focus,
   fieldset[disabled] #site__body .focus.btn-primary, #site__body
-  fieldset[disabled] .focus.btn-primary {
+  fieldset[disabled] .focus.btn-primary,
+  fieldset[disabled] #site__body .focus.btn-primary--invert, #site__body
+  fieldset[disabled] .focus.btn-primary--invert {
     background-color: #337ab7;
     border-color: #2e6da4; }
-  .btn-primary .badge, #site__body .btn-primary .badge {
+  .btn-primary .badge, #site__body .btn-primary .badge, #site__body .btn-primary--invert .badge {
     color: #337ab7;
     background-color: #fff; }
 
@@ -5925,13 +5936,26 @@ button.close {
   font-size: 28px;
   outline: none; }
 
-#site__body .btn-primary {
+#site__body .btn-primary, #site__body .btn-primary--invert {
   background: #3DBFBD;
   border: none;
   border-radius: 0;
   transition: background 0.25s; }
-  #site__body .btn-primary:hover {
+  #site__body .btn-primary:hover, #site__body .btn-primary--invert:hover {
     background: #319897; }
+
+#site__body .btn-primary--invert {
+  background: transparent;
+  color: #3DBFBD;
+  padding: 0px; }
+  #site__body .btn-primary--invert:hover {
+    background: transparent; }
+  #site__body .btn-primary--invert a {
+    color: #3DBFBD;
+    text-decoration: none;
+    font-size: 16px; }
+  #site__body .btn-primary--invert span {
+    margin-right: 10px; }
 
 #site__body .sub-page__article__btn {
   margin: 30px 0;
@@ -5944,6 +5968,27 @@ button.close {
   #site__body .sub-page__article__btn a {
     color: #FFFFFF;
     font-size: 16px; }
+
+#site__body .btn__calander--switch, #site__body .btn__calander--today {
+  background: transparent;
+  outline: none;
+  border: 1px solid #4d4d4d;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+  width: 30px;
+  font-size: 12px;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: background 0.25s; }
+  #site__body .btn__calander--switch:hover, #site__body .btn__calander--today:hover {
+    background: #4d4d4d;
+    color: #FFFFFF; }
+
+#site__body .btn__calander--today {
+  font-size: 16px;
+  width: 100%; }
 
 #site__body .jumbotron {
   background: #FFFFFF;
@@ -6005,6 +6050,66 @@ button.close {
   #site__body .form__input--unstyled:focus {
     border-color: none;
     box-shadow: none; }
+
+#site__body .calander__title {
+  margin: 30px 0;
+  color: #4d4d4d; }
+
+#site__body .calander__text--time {
+  color: #3DBFBD;
+  font-size: 16px; }
+
+#site__body .calander__inner-container {
+  margin: 30px 0; }
+
+#site__body .calander__months {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px; }
+
+#site__body .prev-month {
+  padding-right: 0px; }
+
+#site__body .next-month {
+  padding-left: 0px; }
+  #site__body .next-month .btn__calander--switch, #site__body .next-month .btn__calander--today {
+    border-left: none; }
+
+#site__body .calander__weekdays {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold; }
+
+#site__body .calander__days {
+  display: -ms-flexbox;
+  display: flex; }
+  #site__body .calander__days tbody {
+    width: 100%; }
+  #site__body .calander__days tr {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  #site__body .calander__days td {
+    border: 2px solid transparent;
+    width: 15%;
+    height: 60px;
+    padding: 15px;
+    color: #4d4d4d;
+    opacity: 0.8; }
+    #site__body .calander__days td:hover {
+      border: 2px solid #3DBFBD; }
+
+#site__body .weekly-view-click {
+  margin: 30px 0px; }
+  #site__body .weekly-view-click button {
+    background: none;
+    border: none;
+    color: #3DBFBD; }
+  #site__body .weekly-view-click span {
+    margin-left: 10px; }
 
 #site__body .bar__color {
   height: 10px; }
@@ -6337,6 +6442,23 @@ button.close {
   @media screen and (min-width: 768px) {
     #site__body .article__inner__description {
       display: block; } }
+
+#site__body .sub-page__article--booking {
+  margin: 0 15px; }
+  @media screen and (max-width: 992px) {
+    #site__body .sub-page__article--booking {
+      display: none; } }
+  #site__body .sub-page__article--booking button {
+    width: 100%;
+    opacity: 0.5; }
+  #site__body .sub-page__article--booking .sub-page__article__inner {
+    text-align: left;
+    overflow: hidden;
+    height: 100%;
+    border-bottom: 1px solid #4d4d4d;
+    padding-bottom: 20px; }
+  #site__body .sub-page__article--booking .article__inner__description {
+    display: none; }
 
 #site__body .main-content__wrapper > section {
   padding: 0px; }

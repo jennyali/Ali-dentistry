@@ -17,6 +17,25 @@
             &:hover{background: darken($contrast-color, 10%);}
     }
 
+    .btn-primary--invert {
+        @extend .btn-primary;
+        background: transparent;
+        color: $contrast-color;
+        padding: 0px;
+
+            &:hover{background: transparent;}
+        
+            a{
+                color: $contrast-color;
+                text-decoration: none;
+                font-size: $font-size-md;
+            }
+
+            span {
+                margin-right: $mp-sm;
+            }
+    }
+
     .sub-page__article__btn{
         margin: $mp-double 0;
         padding: $mp-sm $mp-lg;
@@ -31,5 +50,29 @@
                 color: $light;
                 font-size: $font-size-md;
             }
+    }
+
+    .btn__calander--switch {
+        background: transparent;
+        outline: none;
+        border: 1px solid $dark;
+        display: flex;
+        height: 25px;
+        width: 30px;
+        font-size: $font-size-sm;
+        display: flex;
+        justify-content: center;
+        transition: background 0.25s;
+
+            &:hover {
+                background: $dark;
+                color: $light;
+            }
+    }
+
+    .btn__calander--today {
+        @extend .btn__calander--switch;
+        font-size: $font-size-md;
+        width: 100%;
     }
 }

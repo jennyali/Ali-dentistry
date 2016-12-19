@@ -356,7 +356,7 @@
                     <div class="full-stop"></div>
                 </div>
                 <main class="row tab-content">
-                    <section id="services" class="tab-pane fade in active">
+                    <section id="services" class="tab-pane fade">
                         <!-- sub section for different appoinments -->
                         <div class="row">
                             <div class="col-sm-4">
@@ -381,17 +381,86 @@
                         <div class="row">
                         </div>
                     </section>
-                    <section id="book-now" class="container tab-pane fade">
+                    <section id="book-now" class="container tab-pane fade in active">
                         <!-- sub section to book the appointment -->
-                        <div class="row calander__wrapper">
-                            <div class="col-md-6">
-                                <button class="btn btn-default sub-page__article__btn">
-                                    <a data-toggle="pill" href="#services">Back</a>
+                        <div class="row section__wrapper">
+                            <div class="col-md-8">
+                                <button class="btn btn-primary btn-primary--invert">
+                                    <a data-toggle="pill" href="#services"><span class="icon-arrow-67"></span>Back</a>
                                 </button>
-                                (calander here)
+                                <div class="calander">
+                                    <h3 class="calander__title">Schedule Online</h3>
+                                    <a href="#" class="calander__text--time"><span class="icon-clock-2"></span> Schedule in Our Time Zone:GMT -05:00</a>
+                                    <div class="calander__inner-container">
+                                        <ul class="calander__months list-inline list-unstyled">
+                                            <li class="current-month">Dec. 2016</li>
+                                            <li class="prev-month"><button class="btn__calander--switch"><span class="icon-arrow-67"></span></button></li>
+                                            <li class="next-month"><button class="btn__calander--switch"><span class="icon-arrow-68"></span></button></li>
+                                            <li class="todays-date"><button class="btn__calander--today">Today</button></li>
+                                        </ul>
+                                        <ul class="calander__weekdays list-inline list-unstyled">
+                                            <li class="weekday-name">Mon</li>
+                                            <li class="weekday-name">Mon</li>
+                                            <li class="weekday-name">Mon</li>
+                                            <li class="weekday-name">Mon</li>
+                                            <li class="weekday-name">Mon</li>
+                                            <li class="weekday-name">Mon</li>
+                                            <li class="weekday-name">Mon</li>
+                                        </ul>
+                                        <table class="calander__days">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                    <td class="weekday-number">1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <ul class="calander__weekly-click list-inline list-unstyled pull-right">
+                                            <li class="weekly-view-click"><button>Weekly view<span class="icon-arrow-66"></span></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                (repeat of clicked article)
+                            <div class="col-md-4">
+                                <article class="sub-page__article sub-page__article--booking">
+                                    <div class="sub-page__article__inner">
+                                        <h3 class="article__inner__title">Routine Exams</h3>
+                                        <p class="article__inner__data">1 hr 30 min <span>|</span> $300.00</p>
+                                        <p class="article__inner__description">
+                                            Describe your service here. What makes it great? 
+                                            Use short catchy text to tell people what you offer, 
+                                            and the benefits they will receive. A great description 
+                                            gets readers in the mood, and makes them more 
+                                            likely to go ahead and book.
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-primary sub-page__article__btn ">
+                                        <a data-toggle="pill" href="#book-now">Next</a>
+                                    </button>
+                                </article>
                             </div>
                         </div>
                     </section>
