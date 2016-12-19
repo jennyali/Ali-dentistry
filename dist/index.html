@@ -9,6 +9,9 @@
     <link href="https://file.myfontastic.com/ncjQH3qL3iqtxPyrLNBQDo/icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Open+Sans|Roboto:900" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+    <link rel='stylesheet' href='fullcalendar/fullcalendar.css'/>
+
     
 
 </head>
@@ -384,7 +387,7 @@
                     <section id="book-now" class="container tab-pane fade in active">
                         <!-- sub section to book the appointment -->
                         <div class="row section__wrapper">
-                            <div class="col-md-8">
+                            <div class="col-md-8 calendar__column">
                                 <button class="btn btn-primary btn-primary--invert">
                                     <a data-toggle="pill" href="#services"><span class="icon-arrow-67"></span>Back</a>
                                 </button>
@@ -392,55 +395,8 @@
                                     <h3 class="calander__title">Schedule Online</h3>
                                     <a href="#" class="calander__text--time"><span class="icon-clock-2"></span> Schedule in Our Time Zone:GMT -05:00</a>
                                     <div class="calander__inner-container">
-                                        <ul class="calander__months list-inline list-unstyled">
-                                            <li class="current-month">Dec. 2016</li>
-                                            <li class="prev-month"><button class="btn__calander--switch"><span class="icon-arrow-67"></span></button></li>
-                                            <li class="next-month"><button class="btn__calander--switch"><span class="icon-arrow-68"></span></button></li>
-                                            <li class="todays-date"><button class="btn__calander--today">Today</button></li>
-                                        </ul>
-                                        <ul class="calander__weekdays list-inline list-unstyled">
-                                            <li class="weekday-name">Mon</li>
-                                            <li class="weekday-name">Mon</li>
-                                            <li class="weekday-name">Mon</li>
-                                            <li class="weekday-name">Mon</li>
-                                            <li class="weekday-name">Mon</li>
-                                            <li class="weekday-name">Mon</li>
-                                            <li class="weekday-name">Mon</li>
-                                        </ul>
-                                        <table class="calander__days">
-                                            <tbody>
-                                                <tr>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                    <td class="weekday-number">1</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <ul class="calander__weekly-click list-inline list-unstyled pull-right">
-                                            <li class="weekly-view-click"><button>Weekly view<span class="icon-arrow-66"></span></button></li>
-                                        </ul>
+                                        <!-- calendar pluggin to render calendar -->
+                                        <div id='calendar'></div>
                                     </div>
                                 </div>
                             </div>
@@ -507,6 +463,10 @@
   <script src="scripts/lodash.js"></script>
   <script src="scripts/bootstrap.js"></script>
   <script src="scripts/main.js"></script>
+
+  <script src='fullcalendar/lib/jquery.min.js'></script>
+  <script src='fullcalendar/lib/moment.min.js'></script>
+  <script src='fullcalendar/fullcalendar.js'></script>
 
 </body>
 

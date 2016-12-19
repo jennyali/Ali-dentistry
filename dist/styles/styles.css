@@ -6051,6 +6051,9 @@ button.close {
     border-color: none;
     box-shadow: none; }
 
+#site__body .calendar__column {
+  padding: 0 30px; }
+
 #site__body .calander__title {
   margin: 30px 0;
   color: #4d4d4d; }
